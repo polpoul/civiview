@@ -2,6 +2,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import events from './data/events.sample.json';
 import type { CivilizationEvent } from './types';
+import { createTimeline } from './timeline';
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -53,6 +54,7 @@ function createMarkerElement(civilisation: string): HTMLDivElement {
 interface ScalableMarker {
   element: HTMLDivElement;
   baseRadius: number;
+  year: number;
 }
 
 const scalableMarkers: ScalableMarker[] = [];
@@ -66,8 +68,20 @@ function applyZoomScale(): void {
   }
 }
 
+// Les civilisations apparaissent au fur et à mesure qu'on avance le curseur dans le temps.
+function applyYearFilter(currentYear: number): void {
+  for (const { element, year } of scalableMarkers) {
+    element.style.display = year <= currentYear ? '' : 'none';
+  }
+}
+
 map.on('load', () => {
-  for (const event of events as CivilizationEvent[]) {
+  const civEvents = events as CivilizationEvent[];
+  const years = civEvents.map((event) => parseInt(event.date, 10));
+  const minYear = Math.min(...years);
+  const maxYear = Math.max(...years);
+
+  for (const event of civEvents) {
     const popup = new maplibregl.Popup({ offset: 12 }).setHTML(`
       <strong>${event.civilisation}</strong> — ${event.lieu.nom}<br/>
       <em>${event.date}</em><br/>
@@ -79,6 +93,7 @@ map.on('load', () => {
     scalableMarkers.push({
       element,
       baseRadius: radiusForEtendue(event.etendue ?? DEFAULT_ETENDUE_KM2),
+      year: parseInt(event.date, 10),
     });
 
     new maplibregl.Marker({ element })
@@ -89,4 +104,12 @@ map.on('load', () => {
 
   applyZoomScale();
   map.on('zoom', applyZoomScale);
+
+  const timeline = createTimeline({
+    minYear,
+    maxYear,
+    initialYear: maxYear,
+    onChange: applyYearFilter,
+  });
+  document.body.appendChild(timeline);
 });
