@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sumer-uruk-fondation",
+    "lieu": { "lat": 31.3225, "lon": 45.6367, "nom": "Uruk" },
+    "date": "-4000",
+    "civilisation": "Sumer",
+    "evenement": "Émergence d'Uruk comme cité-État",
+    "action": "Urbanisation et invention de l'écriture cunéiforme"
+  },
+  {
+    "id": "egypte-memphis-unification",
+    "lieu": { "lat": 29.8442, "lon": 31.2508, "nom": "Memphis" },
+    "date": "-3100",
+    "civilisation": "Égypte antique",
+    "evenement": "Unification de la Haute et Basse-Égypte",
+    "action": "Fondation de Memphis comme capitale par Narmer"
+  },
+  {
+    "id": "indus-mohenjo-daro",
+    "lieu": { "lat": 27.3294, "lon": 68.1378, "nom": "Mohenjo-daro" },
+    "date": "-2500",
+    "civilisation": "Vallée de l'Indus",
+    "evenement": "Apogée de Mohenjo-daro",
+    "action": "Planification urbaine et système d'assainissement avancé"
+  },
+  {
+    "id": "chine-shang-fondation",
+    "lieu": { "lat": 34.7472, "lon": 113.6249, "nom": "Yin (Anyang)" },
+    "date": "-1600",
+    "civilisation": "Dynastie Shang",
+    "evenement": "Fondation de la dynastie Shang",
+    "action": "Développement de l'écriture sur os oraculaires"
+  },
+  {
+    "id": "athenes-democratie",
+    "lieu": { "lat": 37.9838, "lon": 23.7275, "nom": "Athènes" },
+    "date": "-508",
+    "civilisation": "Grèce antique",
+    "evenement": "Réformes de Clisthène",
+    "action": "Instauration de la démocratie athénienne"
+  },
+  {
+    "id": "rome-fondation-republique",
+    "lieu": { "lat": 41.9028, "lon": 12.4964, "nom": "Rome" },
+    "date": "-509",
+    "civilisation": "Rome antique",
+    "evenement": "Chute de la royauté romaine",
+    "action": "Fondation de la République romaine"
+  }
+]
