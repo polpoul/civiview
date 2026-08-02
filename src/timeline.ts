@@ -79,6 +79,16 @@ export function createTimeline({ minYear, maxYear, initialYear, onChange }: Time
   periods.className = 'timeline-periods';
   periods.style.background = buildPeriodsGradient(minYear, maxYear);
 
+  track.append(periods);
+
+  if (minYear < 0 && maxYear > 0) {
+    const zeroMark = document.createElement('div');
+    zeroMark.className = 'timeline-zero-mark';
+    zeroMark.title = 'An 0';
+    zeroMark.style.left = `${((0 - minYear) / (maxYear - minYear)) * 100}%`;
+    track.appendChild(zeroMark);
+  }
+
   const slider = document.createElement('input');
   slider.type = 'range';
   slider.className = 'timeline-slider';
@@ -96,7 +106,7 @@ export function createTimeline({ minYear, maxYear, initialYear, onChange }: Time
     onChange(year);
   });
 
-  track.append(periods, slider);
+  track.append(slider);
   row.append(label, track);
   container.append(row, createLegend(minYear, maxYear));
   onChange(Number(slider.value));

@@ -91,7 +91,7 @@ function formatEventDate(event: CivilizationEvent): string {
   return `${debut} – ${formatYear(parseInt(event.dateFin, 10))}`;
 }
 
-const TIMELINE_MIN_YEAR = -5000;
+const TIMELINE_MIN_YEAR = -12000;
 
 map.on('load', () => {
   const civEvents = events as CivilizationEvent[];
@@ -100,9 +100,9 @@ map.on('load', () => {
     const fin = event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10);
     return fin === undefined ? [debut] : [debut, fin];
   });
-  // Le curseur couvre toute l'histoire jusqu'à aujourd'hui, même si les données ne vont pas si loin.
+  // Le curseur couvre toute l'histoire jusqu'à aujourd'hui, avec un début fixe.
   const currentYear = new Date().getFullYear();
-  const minYear = Math.min(TIMELINE_MIN_YEAR, ...eventYears);
+  const minYear = TIMELINE_MIN_YEAR;
   const maxYear = Math.max(currentYear, ...eventYears);
   // Par défaut, on se place à la dernière date couverte par les données pour que tout soit visible.
   const initialYear = Math.max(...eventYears);
