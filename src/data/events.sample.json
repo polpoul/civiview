@@ -5,7 +5,8 @@
     "date": "-4000",
     "civilisation": "Sumer",
     "evenement": "Émergence d'Uruk comme cité-État",
-    "action": "Urbanisation et invention de l'écriture cunéiforme"
+    "action": "Urbanisation et invention de l'écriture cunéiforme",
+    "etendue": 10000
   },
   {
     "id": "egypte-memphis-unification",
@@ -13,7 +14,8 @@
     "date": "-3100",
     "civilisation": "Égypte antique",
     "evenement": "Unification de la Haute et Basse-Égypte",
-    "action": "Fondation de Memphis comme capitale par Narmer"
+    "action": "Fondation de Memphis comme capitale par Narmer",
+    "etendue": 50000
   },
   {
     "id": "indus-mohenjo-daro",
@@ -21,7 +23,8 @@
     "date": "-2500",
     "civilisation": "Vallée de l'Indus",
     "evenement": "Apogée de Mohenjo-daro",
-    "action": "Planification urbaine et système d'assainissement avancé"
+    "action": "Planification urbaine et système d'assainissement avancé",
+    "etendue": 30000
   },
   {
     "id": "chine-shang-fondation",
@@ -29,7 +32,8 @@
     "date": "-1600",
     "civilisation": "Dynastie Shang",
     "evenement": "Fondation de la dynastie Shang",
-    "action": "Développement de l'écriture sur os oraculaires"
+    "action": "Développement de l'écriture sur os oraculaires",
+    "etendue": 200000
   },
   {
     "id": "athenes-democratie",
@@ -37,7 +41,8 @@
     "date": "-508",
     "civilisation": "Grèce antique",
     "evenement": "Réformes de Clisthène",
-    "action": "Instauration de la démocratie athénienne"
+    "action": "Instauration de la démocratie athénienne",
+    "etendue": 2500
   },
   {
     "id": "rome-fondation-republique",
@@ -45,6 +50,7 @@
     "date": "-509",
     "civilisation": "Rome antique",
     "evenement": "Chute de la royauté romaine",
-    "action": "Fondation de la République romaine"
+    "action": "Fondation de la République romaine",
+    "etendue": 1000
   }
 ]
