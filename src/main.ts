@@ -34,6 +34,10 @@ function zoomScaleFactor(zoom: number): number {
   return Math.pow(2, (zoom - REFERENCE_ZOOM) * ZOOM_SIZE_INFLUENCE);
 }
 
+const MARKER_ALPHA = 0.5;
+
+// MapLibre applique un style inline `opacity: 1` sur l'élément du marqueur (prioritaire sur le CSS),
+// donc la transparence doit être portée par la couleur elle-même plutôt que par la propriété opacity.
 function colorForCivilisation(civilisation: string): string {
   let hash = 0;
   for (let i = 0; i < civilisation.length; i++) {
@@ -41,7 +45,7 @@ function colorForCivilisation(civilisation: string): string {
     hash |= 0;
   }
   const hue = Math.abs(hash) % 360;
-  return `hsl(${hue} 70% 50%)`;
+  return `hsl(${hue} 70% 50% / ${MARKER_ALPHA})`;
 }
 
 function createMarkerElement(civilisation: string): HTMLDivElement {
