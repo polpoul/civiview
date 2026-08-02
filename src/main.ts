@@ -91,15 +91,21 @@ function formatEventDate(event: CivilizationEvent): string {
   return `${debut} – ${formatYear(parseInt(event.dateFin, 10))}`;
 }
 
+const TIMELINE_MIN_YEAR = -5000;
+
 map.on('load', () => {
   const civEvents = events as CivilizationEvent[];
-  const years = civEvents.flatMap((event) => {
+  const eventYears = civEvents.flatMap((event) => {
     const debut = parseInt(event.dateDebut, 10);
     const fin = event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10);
     return fin === undefined ? [debut] : [debut, fin];
   });
-  const minYear = Math.min(...years);
-  const maxYear = Math.max(...years);
+  // Le curseur couvre toute l'histoire jusqu'à aujourd'hui, même si les données ne vont pas si loin.
+  const currentYear = new Date().getFullYear();
+  const minYear = Math.min(TIMELINE_MIN_YEAR, ...eventYears);
+  const maxYear = Math.max(currentYear, ...eventYears);
+  // Par défaut, on se place à la dernière date couverte par les données pour que tout soit visible.
+  const initialYear = Math.max(...eventYears);
 
   for (const event of civEvents) {
     const popup = new maplibregl.Popup({ offset: 12 }).setHTML(`
@@ -129,7 +135,7 @@ map.on('load', () => {
   const timeline = createTimeline({
     minYear,
     maxYear,
-    initialYear: maxYear,
+    initialYear,
     onChange: applyYearFilter,
   });
   document.body.appendChild(timeline);
