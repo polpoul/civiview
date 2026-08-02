@@ -24,6 +24,15 @@ function radiusForEtendue(etendue: number): number {
   return Math.min(MAX_RADIUS_PX, Math.max(MIN_RADIUS_PX, scaled));
 }
 
+const REFERENCE_ZOOM = 2;
+// Fraction de l'échelle de zoom appliquée à la taille des disques : 0 = taille fixe à l'écran,
+// 1 = taille proportionnelle au terrain (comme les tuiles). On reste entre les deux.
+const ZOOM_SIZE_INFLUENCE = 0.35;
+
+function zoomScaleFactor(zoom: number): number {
+  return Math.pow(2, (zoom - REFERENCE_ZOOM) * ZOOM_SIZE_INFLUENCE);
+}
+
 function colorForCivilisation(civilisation: string): string {
   let hash = 0;
   for (let i = 0; i < civilisation.length; i++) {
@@ -34,14 +43,27 @@ function colorForCivilisation(civilisation: string): string {
   return `hsl(${hue} 70% 50%)`;
 }
 
-function createMarkerElement(event: CivilizationEvent): HTMLDivElement {
-  const radius = radiusForEtendue(event.etendue ?? DEFAULT_ETENDUE_KM2);
+function createMarkerElement(civilisation: string): HTMLDivElement {
   const el = document.createElement('div');
   el.className = 'civ-marker';
-  el.style.width = `${radius * 2}px`;
-  el.style.height = `${radius * 2}px`;
-  el.style.backgroundColor = colorForCivilisation(event.civilisation);
+  el.style.backgroundColor = colorForCivilisation(civilisation);
   return el;
+}
+
+interface ScalableMarker {
+  element: HTMLDivElement;
+  baseRadius: number;
+}
+
+const scalableMarkers: ScalableMarker[] = [];
+
+function applyZoomScale(): void {
+  const scale = zoomScaleFactor(map.getZoom());
+  for (const { element, baseRadius } of scalableMarkers) {
+    const diameter = baseRadius * 2 * scale;
+    element.style.width = `${diameter}px`;
+    element.style.height = `${diameter}px`;
+  }
 }
 
 map.on('load', () => {
@@ -53,9 +75,18 @@ map.on('load', () => {
       <p>${event.action}</p>
     `);
 
-    new maplibregl.Marker({ element: createMarkerElement(event) })
+    const element = createMarkerElement(event.civilisation);
+    scalableMarkers.push({
+      element,
+      baseRadius: radiusForEtendue(event.etendue ?? DEFAULT_ETENDUE_KM2),
+    });
+
+    new maplibregl.Marker({ element })
       .setLngLat([event.lieu.lon, event.lieu.lat])
       .setPopup(popup)
       .addTo(map);
   }
+
+  applyZoomScale();
+  map.on('zoom', applyZoomScale);
 });
