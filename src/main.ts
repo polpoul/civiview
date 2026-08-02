@@ -2,7 +2,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import events from './data/events.sample.json';
 import type { CivilizationEvent } from './types';
-import { createTimeline } from './timeline';
+import { createTimeline, formatYear } from './timeline';
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -54,7 +54,9 @@ function createMarkerElement(civilisation: string): HTMLDivElement {
 interface ScalableMarker {
   element: HTMLDivElement;
   baseRadius: number;
-  year: number;
+  dateDebut: number;
+  /** Absent = événement ponctuel : reste visible indéfiniment une fois apparu. */
+  dateFin: number | undefined;
 }
 
 const scalableMarkers: ScalableMarker[] = [];
@@ -68,23 +70,37 @@ function applyZoomScale(): void {
   }
 }
 
-// Les civilisations apparaissent au fur et à mesure qu'on avance le curseur dans le temps.
+// Les civilisations apparaissent quand le curseur atteint leur dateDebut, et disparaissent
+// après leur dateFin si elle est renseignée (sinon elles restent visibles indéfiniment).
 function applyYearFilter(currentYear: number): void {
-  for (const { element, year } of scalableMarkers) {
-    element.style.display = year <= currentYear ? '' : 'none';
+  for (const { element, dateDebut, dateFin } of scalableMarkers) {
+    const visible = dateDebut <= currentYear && (dateFin === undefined || currentYear <= dateFin);
+    element.style.display = visible ? '' : 'none';
   }
+}
+
+function formatEventDate(event: CivilizationEvent): string {
+  const debut = formatYear(parseInt(event.dateDebut, 10));
+  if (event.dateFin === undefined) {
+    return debut;
+  }
+  return `${debut} – ${formatYear(parseInt(event.dateFin, 10))}`;
 }
 
 map.on('load', () => {
   const civEvents = events as CivilizationEvent[];
-  const years = civEvents.map((event) => parseInt(event.date, 10));
+  const years = civEvents.flatMap((event) => {
+    const debut = parseInt(event.dateDebut, 10);
+    const fin = event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10);
+    return fin === undefined ? [debut] : [debut, fin];
+  });
   const minYear = Math.min(...years);
   const maxYear = Math.max(...years);
 
   for (const event of civEvents) {
     const popup = new maplibregl.Popup({ offset: 12 }).setHTML(`
       <strong>${event.civilisation}</strong> — ${event.lieu.nom}<br/>
-      <em>${event.date}</em><br/>
+      <em>${formatEventDate(event)}</em><br/>
       <p>${event.evenement}</p>
       <p>${event.action}</p>
     `);
@@ -93,7 +109,8 @@ map.on('load', () => {
     scalableMarkers.push({
       element,
       baseRadius: radiusForEtendue(event.etendue ?? DEFAULT_ETENDUE_KM2),
-      year: parseInt(event.date, 10),
+      dateDebut: parseInt(event.dateDebut, 10),
+      dateFin: event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10),
     });
 
     new maplibregl.Marker({ element })

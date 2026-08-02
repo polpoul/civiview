@@ -5,10 +5,18 @@ export interface CivilizationEvent {
     lon: number;
     nom: string;
   };
-  date: string;
   civilisation: string;
+  /** Nature de l'événement : fondation, bataille, invention, expansion, effondrement, migration, découverte... */
+  type?: string;
+  dateDebut: string;
+  /** Si absent, l'événement est considéré comme ponctuel et reste visible indéfiniment une fois apparu. */
+  dateFin?: string;
   evenement: string;
   action: string;
   /** Étendue approximative de la civilisation à cette date, en km². */
   etendue?: number;
+  /** Importance de l'événement, de 1 (mineur) à 5 (majeur). */
+  importance?: number;
+  categorie?: string[];
+  source?: string;
 }

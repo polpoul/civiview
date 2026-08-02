@@ -2,8 +2,9 @@
   {
     "id": "sumer-uruk-fondation",
     "lieu": { "lat": 31.3225, "lon": 45.6367, "nom": "Uruk" },
-    "date": "-4000",
     "civilisation": "Sumer",
+    "type": "fondation",
+    "dateDebut": "-4000",
     "evenement": "Émergence d'Uruk comme cité-État",
     "action": "Urbanisation et invention de l'écriture cunéiforme",
     "etendue": 10000
@@ -11,8 +12,9 @@
   {
     "id": "egypte-memphis-unification",
     "lieu": { "lat": 29.8442, "lon": 31.2508, "nom": "Memphis" },
-    "date": "-3100",
     "civilisation": "Égypte antique",
+    "type": "fondation",
+    "dateDebut": "-3100",
     "evenement": "Unification de la Haute et Basse-Égypte",
     "action": "Fondation de Memphis comme capitale par Narmer",
     "etendue": 50000
@@ -20,8 +22,9 @@
   {
     "id": "indus-mohenjo-daro",
     "lieu": { "lat": 27.3294, "lon": 68.1378, "nom": "Mohenjo-daro" },
-    "date": "-2500",
     "civilisation": "Vallée de l'Indus",
+    "type": "apogée",
+    "dateDebut": "-2500",
     "evenement": "Apogée de Mohenjo-daro",
     "action": "Planification urbaine et système d'assainissement avancé",
     "etendue": 30000
@@ -29,17 +32,85 @@
   {
     "id": "chine-shang-fondation",
     "lieu": { "lat": 34.7472, "lon": 113.6249, "nom": "Yin (Anyang)" },
-    "date": "-1600",
     "civilisation": "Dynastie Shang",
+    "type": "fondation",
+    "dateDebut": "-1600",
     "evenement": "Fondation de la dynastie Shang",
     "action": "Développement de l'écriture sur os oraculaires",
     "etendue": 200000
   },
   {
+    "id": "mycenes-origine",
+    "lieu": { "lat": 37.7306, "lon": 22.7544, "nom": "Mycènes" },
+    "civilisation": "Civilisation mycénienne",
+    "type": "fondation",
+    "dateDebut": "-1650",
+    "evenement": "Émergence des premières élites mycéniennes",
+    "action": "Construction des tombes à fosse et enrichissement des royaumes achéens",
+    "etendue": 15000,
+    "importance": 3,
+    "categorie": ["politique"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
+  },
+  {
+    "id": "mycenes-conquete-cnossos",
+    "lieu": { "lat": 35.2989, "lon": 25.1635, "nom": "Cnossos" },
+    "civilisation": "Civilisation mycénienne",
+    "type": "conquête",
+    "dateDebut": "-1450",
+    "evenement": "Prise de contrôle de la Crète",
+    "action": "Occupation du palais de Cnossos et adoption de l'écriture en linéaire B",
+    "etendue": 80000,
+    "importance": 4,
+    "categorie": ["politique", "militaire"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
+  },
+  {
+    "id": "mycenes-apogee",
+    "lieu": { "lat": 37.7306, "lon": 22.7544, "nom": "Mycènes" },
+    "civilisation": "Civilisation mycénienne",
+    "type": "apogée",
+    "dateDebut": "-1400",
+    "dateFin": "-1250",
+    "evenement": "Apogée des royaumes mycéniens",
+    "action": "Développement des palais fortifiés, commerce méditerranéen et administration palatiale",
+    "etendue": 350000,
+    "importance": 5,
+    "categorie": ["politique", "militaire", "culture"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
+  },
+  {
+    "id": "mycenes-guerre-troie",
+    "lieu": { "lat": 39.9578, "lon": 26.2389, "nom": "Troie" },
+    "civilisation": "Civilisation mycénienne",
+    "type": "bataille",
+    "dateDebut": "-1250",
+    "evenement": "Guerre de Troie (traditionnelle)",
+    "action": "Expédition militaire des royaumes achéens contre Troie",
+    "etendue": 400000,
+    "importance": 4,
+    "categorie": ["militaire", "culture"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
+  },
+  {
+    "id": "mycenes-effondrement",
+    "lieu": { "lat": 37.7306, "lon": 22.7544, "nom": "Mycènes" },
+    "civilisation": "Civilisation mycénienne",
+    "type": "effondrement",
+    "dateDebut": "-1200",
+    "evenement": "Effondrement de la civilisation palatiale",
+    "action": "Destruction des principaux palais et disparition progressive de l'administration mycénienne",
+    "etendue": 50000,
+    "importance": 5,
+    "categorie": ["politique", "militaire"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
+  },
+  {
     "id": "athenes-democratie",
     "lieu": { "lat": 37.9838, "lon": 23.7275, "nom": "Athènes" },
-    "date": "-508",
     "civilisation": "Grèce antique",
+    "type": "réforme",
+    "dateDebut": "-508",
     "evenement": "Réformes de Clisthène",
     "action": "Instauration de la démocratie athénienne",
     "etendue": 2500
@@ -47,8 +118,9 @@
   {
     "id": "rome-fondation-republique",
     "lieu": { "lat": 41.9028, "lon": 12.4964, "nom": "Rome" },
-    "date": "-509",
     "civilisation": "Rome antique",
+    "type": "fondation",
+    "dateDebut": "-509",
     "evenement": "Chute de la royauté romaine",
     "action": "Fondation de la République romaine",
     "etendue": 1000
