@@ -131,7 +131,22 @@
     "dateFin": "-332",
     "evenement": "Unification de la Haute et Basse-Égypte",
     "action": "Fondation de Memphis comme capitale par Narmer",
-    "etendue": 50000
+    "etendue": 50000,
+    "territoire": [
+      { "lat": 31.6, "lon": 30.0 },
+      { "lat": 31.5, "lon": 31.5 },
+      { "lat": 31.3, "lon": 32.3 },
+      { "lat": 29.9, "lon": 32.5 },
+      { "lat": 27.8, "lon": 32.0 },
+      { "lat": 25.7, "lon": 32.6 },
+      { "lat": 24.0, "lon": 32.9 },
+      { "lat": 23.9, "lon": 32.5 },
+      { "lat": 25.5, "lon": 31.8 },
+      { "lat": 27.5, "lon": 30.9 },
+      { "lat": 29.5, "lon": 30.6 },
+      { "lat": 31.0, "lon": 29.9 },
+      { "lat": 31.6, "lon": 30.0 }
+    ]
   },
   {
     "id": "indus-mohenjo-daro",
@@ -254,7 +269,20 @@
     "dateFin": "-322",
     "evenement": "Réformes de Clisthène",
     "action": "Instauration de la démocratie athénienne",
-    "etendue": 2500
+    "etendue": 2500,
+    "territoire": [
+      { "lat": 41.0, "lon": 20.0 },
+      { "lat": 40.5, "lon": 23.0 },
+      { "lat": 39.5, "lon": 26.0 },
+      { "lat": 37.5, "lon": 27.2 },
+      { "lat": 36.0, "lon": 28.2 },
+      { "lat": 35.2, "lon": 25.7 },
+      { "lat": 34.9, "lon": 24.5 },
+      { "lat": 36.4, "lon": 22.8 },
+      { "lat": 38.0, "lon": 20.4 },
+      { "lat": 39.8, "lon": 19.7 },
+      { "lat": 41.0, "lon": 20.0 }
+    ]
   },
   {
     "id": "rome-fondation-legendaire",
@@ -366,7 +394,28 @@
     "etendue": 5000000,
     "importance": 5,
     "categorie": ["politique", "militaire"],
-    "source": "https://fr.wikipedia.org/wiki/Rome_antique"
+    "source": "https://fr.wikipedia.org/wiki/Rome_antique",
+    "territoire": [
+      { "lat": 55.8, "lon": -4.0 },
+      { "lat": 51.5, "lon": 3.5 },
+      { "lat": 50.0, "lon": 8.5 },
+      { "lat": 47.5, "lon": 16.5 },
+      { "lat": 45.0, "lon": 15.5 },
+      { "lat": 41.3, "lon": 29.0 },
+      { "lat": 39.5, "lon": 40.0 },
+      { "lat": 37.0, "lon": 41.5 },
+      { "lat": 33.0, "lon": 35.8 },
+      { "lat": 31.2, "lon": 32.5 },
+      { "lat": 31.5, "lon": 29.5 },
+      { "lat": 32.0, "lon": 20.0 },
+      { "lat": 33.0, "lon": 11.0 },
+      { "lat": 35.7, "lon": -5.8 },
+      { "lat": 36.5, "lon": -6.3 },
+      { "lat": 43.5, "lon": -9.0 },
+      { "lat": 48.3, "lon": -4.5 },
+      { "lat": 51.0, "lon": 2.0 },
+      { "lat": 55.8, "lon": -4.0 }
+    ]
   },
   {
     "id": "rome-auguste-empire",
@@ -690,35 +739,6 @@
     ]
   },
   {
-    "id": "civilisation-egyptienne-antique",
-    "civilisation": "Égypte antique",
-    "type": "fondation",
-    "dateDebut": "-3100",
-    "dateFin": "-30",
-    "lieu": { "lat": 29.9, "lon": 31.2, "nom": "Memphis" },
-    "evenement": "Unification de la vallée du Nil",
-    "action": "Constitution d'un État centralisé autour du Nil, avec pharaons, administration et monuments monumentaux.",
-    "etendue": 1000000,
-    "importance": 5,
-    "categorie": ["politique", "religieuse", "urbaine"],
-    "source": "https://fr.wikipedia.org/wiki/%C3%89gypte_antique",
-    "territoire": [
-      { "lat": 31.6, "lon": 30.0 },
-      { "lat": 31.5, "lon": 31.5 },
-      { "lat": 31.3, "lon": 32.3 },
-      { "lat": 29.9, "lon": 32.5 },
-      { "lat": 27.8, "lon": 32.0 },
-      { "lat": 25.7, "lon": 32.6 },
-      { "lat": 24.0, "lon": 32.9 },
-      { "lat": 23.9, "lon": 32.5 },
-      { "lat": 25.5, "lon": 31.8 },
-      { "lat": 27.5, "lon": 30.9 },
-      { "lat": 29.5, "lon": 30.6 },
-      { "lat": 31.0, "lon": 29.9 },
-      { "lat": 31.6, "lon": 30.0 }
-    ]
-  },
-  {
     "id": "civilisation-de-l-indus",
     "civilisation": "Civilisation de l'Indus",
     "type": "fondation",
@@ -792,82 +812,6 @@
       { "lat": 34.95, "lon": 24.0 },
       { "lat": 35.2, "lon": 23.5 },
       { "lat": 35.55, "lon": 23.6 }
-    ]
-  },
-  {
-    "id": "civilisation-mycenienne",
-    "civilisation": "Civilisation mycénienne",
-    "type": "fondation",
-    "dateDebut": "-1600",
-    "dateFin": "-1100",
-    "lieu": { "lat": 37.8, "lon": 22.7, "nom": "Mycènes" },
-    "evenement": "Domination des palais mycéniens",
-    "action": "Développement de centres fortifiés, d'une aristocratie guerrière et d'un système administratif palatial.",
-    "etendue": 90000,
-    "importance": 4,
-    "categorie": ["politique", "militaire", "urbaine"],
-    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
-  },
-  {
-    "id": "grece-antique",
-    "civilisation": "Grèce antique",
-    "type": "expansion",
-    "dateDebut": "-800",
-    "dateFin": "-146",
-    "lieu": { "lat": 37.9, "lon": 23.7, "nom": "Athènes" },
-    "evenement": "Diffusion des cités grecques",
-    "action": "Expansion du monde des cités grecques, de la philosophie, de la démocratie et des réseaux coloniaux méditerranéens.",
-    "etendue": 600000,
-    "importance": 5,
-    "categorie": ["politique", "culturelle", "maritime"],
-    "source": "https://fr.wikipedia.org/wiki/Gr%C3%A8ce_antique",
-    "territoire": [
-      { "lat": 41.0, "lon": 20.0 },
-      { "lat": 40.5, "lon": 23.0 },
-      { "lat": 39.5, "lon": 26.0 },
-      { "lat": 37.5, "lon": 27.2 },
-      { "lat": 36.0, "lon": 28.2 },
-      { "lat": 35.2, "lon": 25.7 },
-      { "lat": 34.9, "lon": 24.5 },
-      { "lat": 36.4, "lon": 22.8 },
-      { "lat": 38.0, "lon": 20.4 },
-      { "lat": 39.8, "lon": 19.7 },
-      { "lat": 41.0, "lon": 20.0 }
-    ]
-  },
-  {
-    "id": "rome-antique",
-    "civilisation": "Rome antique",
-    "type": "expansion",
-    "dateDebut": "-753",
-    "dateFin": "476",
-    "lieu": { "lat": 41.9, "lon": 12.5, "nom": "Rome" },
-    "evenement": "Expansion de Rome en Méditerranée",
-    "action": "Constitution d'un empire méditerranéen fondé sur le droit, l'armée, les routes et l'administration provinciale.",
-    "etendue": 5000000,
-    "importance": 5,
-    "categorie": ["politique", "militaire", "juridique"],
-    "source": "https://fr.wikipedia.org/wiki/Rome_antique",
-    "territoire": [
-      { "lat": 55.8, "lon": -4.0 },
-      { "lat": 51.5, "lon": 3.5 },
-      { "lat": 50.0, "lon": 8.5 },
-      { "lat": 47.5, "lon": 16.5 },
-      { "lat": 45.0, "lon": 15.5 },
-      { "lat": 41.3, "lon": 29.0 },
-      { "lat": 39.5, "lon": 40.0 },
-      { "lat": 37.0, "lon": 41.5 },
-      { "lat": 33.0, "lon": 35.8 },
-      { "lat": 31.2, "lon": 32.5 },
-      { "lat": 31.5, "lon": 29.5 },
-      { "lat": 32.0, "lon": 20.0 },
-      { "lat": 33.0, "lon": 11.0 },
-      { "lat": 35.7, "lon": -5.8 },
-      { "lat": 36.5, "lon": -6.3 },
-      { "lat": 43.5, "lon": -9.0 },
-      { "lat": 48.3, "lon": -4.5 },
-      { "lat": 51.0, "lon": 2.0 },
-      { "lat": 55.8, "lon": -4.0 }
     ]
   },
   {
