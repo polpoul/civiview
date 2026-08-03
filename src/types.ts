@@ -13,8 +13,13 @@ export interface CivilizationEvent {
   dateFin?: string;
   evenement: string;
   action: string;
-  /** Étendue approximative de la civilisation à cette date, en km². */
+  /** Étendue approximative de la civilisation à cette date, en km² (utilisée pour générer une forme par défaut si `territoire` est absent). */
   etendue?: number;
+  /**
+   * Contour précis du territoire (polygone simple, liste ordonnée de points).
+   * Si fourni, remplace la forme générée automatiquement à partir de `etendue`.
+   */
+  territoire?: { lat: number; lon: number }[];
   /** Importance de l'événement, de 1 (mineur) à 5 (majeur). */
   importance?: number;
   categorie?: string[];

@@ -14,30 +14,12 @@ const map = new maplibregl.Map({
 map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
 const DEFAULT_ETENDUE_KM2 = 10_000;
-const REFERENCE_ETENDUE_KM2 = 10_000;
-const REFERENCE_RADIUS_PX = 14;
-const MIN_RADIUS_PX = 6;
-const MAX_RADIUS_PX = 48;
+const MIN_RADIUS_KM = 5;
+const KM_PER_DEG_LAT = 111.32;
+const BLOB_POINTS = 14;
+const FILL_OPACITY = 0.5;
+const HOVER_FILL_OPACITY = 0.75;
 
-// Rayon proportionnel à sqrt(étendue) : la SURFACE du disque représente l'étendue de la civilisation.
-function radiusForEtendue(etendue: number): number {
-  const scaled = REFERENCE_RADIUS_PX * Math.sqrt(etendue / REFERENCE_ETENDUE_KM2);
-  return Math.min(MAX_RADIUS_PX, Math.max(MIN_RADIUS_PX, scaled));
-}
-
-const REFERENCE_ZOOM = 2;
-// Fraction de l'échelle de zoom appliquée à la taille des disques : 0 = taille fixe à l'écran,
-// 1 = taille proportionnelle au terrain (comme les tuiles). On reste entre les deux.
-const ZOOM_SIZE_INFLUENCE = 0.35;
-
-function zoomScaleFactor(zoom: number): number {
-  return Math.pow(2, (zoom - REFERENCE_ZOOM) * ZOOM_SIZE_INFLUENCE);
-}
-
-const MARKER_ALPHA = 0.5;
-
-// MapLibre applique un style inline `opacity: 1` sur l'élément du marqueur (prioritaire sur le CSS),
-// donc la transparence doit être portée par la couleur elle-même plutôt que par la propriété opacity.
 function colorForCivilisation(civilisation: string): string {
   let hash = 0;
   for (let i = 0; i < civilisation.length; i++) {
@@ -45,42 +27,55 @@ function colorForCivilisation(civilisation: string): string {
     hash |= 0;
   }
   const hue = Math.abs(hash) % 360;
-  return `hsl(${hue} 70% 50% / ${MARKER_ALPHA})`;
+  return `hsl(${hue} 70% 50%)`;
 }
 
-function createMarkerElement(civilisation: string): HTMLDivElement {
-  const el = document.createElement('div');
-  el.className = 'civ-marker';
-  el.style.backgroundColor = colorForCivilisation(civilisation);
-  return el;
-}
-
-interface ScalableMarker {
-  element: HTMLDivElement;
-  baseRadius: number;
-  dateDebut: number;
-  /** Absent = événement ponctuel : reste visible indéfiniment une fois apparu. */
-  dateFin: number | undefined;
-}
-
-const scalableMarkers: ScalableMarker[] = [];
-
-function applyZoomScale(): void {
-  const scale = zoomScaleFactor(map.getZoom());
-  for (const { element, baseRadius } of scalableMarkers) {
-    const diameter = baseRadius * 2 * scale;
-    element.style.width = `${diameter}px`;
-    element.style.height = `${diameter}px`;
+// PRNG déterministe (mulberry32) : la forme générée pour un événement est stable d'un chargement à l'autre.
+function hashString(str: string): number {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
   }
+  return hash;
 }
 
-// Les civilisations apparaissent quand le curseur atteint leur dateDebut, et disparaissent
-// après leur dateFin si elle est renseignée (sinon elles restent visibles indéfiniment).
-function applyYearFilter(currentYear: number): void {
-  for (const { element, dateDebut, dateFin } of scalableMarkers) {
-    const visible = dateDebut <= currentYear && (dateFin === undefined || currentYear <= dateFin);
-    element.style.display = visible ? '' : 'none';
+function mulberry32(seed: number): () => number {
+  let state = seed;
+  return () => {
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// Forme organique par défaut : un polygone irrégulier centré sur `lieu`, dont la surface approche `etendue`.
+// Si `event.territoire` est fourni, il est utilisé tel quel à la place (contour précis).
+function polygonForEvent(event: CivilizationEvent): number[][] {
+  if (event.territoire && event.territoire.length >= 3) {
+    const ring = event.territoire.map((p) => [p.lon, p.lat]);
+    ring.push(ring[0]);
+    return ring;
   }
+
+  const areaKm2 = event.etendue ?? DEFAULT_ETENDUE_KM2;
+  const radiusKm = Math.max(MIN_RADIUS_KM, Math.sqrt(areaKm2 / Math.PI));
+  const { lat, lon } = event.lieu;
+  const latRad = (lat * Math.PI) / 180;
+  const random = mulberry32(hashString(event.id));
+
+  const ring: number[][] = [];
+  for (let i = 0; i < BLOB_POINTS; i++) {
+    const angle = (i / BLOB_POINTS) * Math.PI * 2;
+    const variation = 0.65 + random() * 0.7;
+    const r = radiusKm * variation;
+    const dLat = (r * Math.cos(angle)) / KM_PER_DEG_LAT;
+    const dLon = (r * Math.sin(angle)) / (KM_PER_DEG_LAT * Math.cos(latRad));
+    ring.push([lon + dLon, lat + dLat]);
+  }
+  ring.push(ring[0]);
+  return ring;
 }
 
 function formatEventDate(event: CivilizationEvent): string {
@@ -92,6 +87,17 @@ function formatEventDate(event: CivilizationEvent): string {
 }
 
 const TIMELINE_MIN_YEAR = -12000;
+const FILL_LAYER = 'civilizations-fill';
+const OUTLINE_LAYER = 'civilizations-outline';
+
+// Filtre MapLibre : visible si dateDebut <= currentYear <= dateFin (dateFin absente = jamais de fin).
+function visibilityFilter(currentYear: number): maplibregl.ExpressionSpecification {
+  return [
+    'all',
+    ['<=', ['get', 'dateDebut'], currentYear],
+    ['any', ['!', ['has', 'dateFin']], ['<=', currentYear, ['get', 'dateFin']]],
+  ];
+}
 
 map.on('load', () => {
   const civEvents = events as CivilizationEvent[];
@@ -100,37 +106,110 @@ map.on('load', () => {
     const fin = event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10);
     return fin === undefined ? [debut] : [debut, fin];
   });
-  // Le curseur couvre toute l'histoire jusqu'à aujourd'hui, avec un début fixe.
   const currentYear = new Date().getFullYear();
   const minYear = TIMELINE_MIN_YEAR;
   const maxYear = Math.max(currentYear, ...eventYears);
   // Par défaut, on se place à la dernière date couverte par les données pour que tout soit visible.
   const initialYear = Math.max(...eventYears);
 
-  for (const event of civEvents) {
-    const popup = new maplibregl.Popup({ offset: 12 }).setHTML(`
-      <strong>${event.civilisation}</strong> — ${event.lieu.nom}<br/>
-      <em>${formatEventDate(event)}</em><br/>
-      <p>${event.evenement}</p>
-      <p>${event.action}</p>
-    `);
-
-    const element = createMarkerElement(event.civilisation);
-    scalableMarkers.push({
-      element,
-      baseRadius: radiusForEtendue(event.etendue ?? DEFAULT_ETENDUE_KM2),
+  const features: GeoJSON.Feature[] = civEvents.map((event) => ({
+    type: 'Feature',
+    properties: {
+      civilisation: event.civilisation,
+      color: colorForCivilisation(event.civilisation),
       dateDebut: parseInt(event.dateDebut, 10),
-      dateFin: event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10),
-    });
+      ...(event.dateFin === undefined ? {} : { dateFin: parseInt(event.dateFin, 10) }),
+      dateLabel: formatEventDate(event),
+      lieu: event.lieu.nom,
+      evenement: event.evenement,
+      action: event.action,
+    },
+    geometry: {
+      type: 'Polygon',
+      coordinates: [polygonForEvent(event)],
+    },
+  }));
 
-    new maplibregl.Marker({ element })
-      .setLngLat([event.lieu.lon, event.lieu.lat])
-      .setPopup(popup)
+  map.addSource('civilizations', {
+    type: 'geojson',
+    data: { type: 'FeatureCollection', features },
+    generateId: true,
+  });
+
+  map.addLayer({
+    id: FILL_LAYER,
+    type: 'fill',
+    source: 'civilizations',
+    paint: {
+      'fill-color': ['get', 'color'],
+      'fill-opacity': [
+        'case',
+        ['boolean', ['feature-state', 'hover'], false],
+        HOVER_FILL_OPACITY,
+        FILL_OPACITY,
+      ],
+    },
+  });
+
+  map.addLayer({
+    id: OUTLINE_LAYER,
+    type: 'line',
+    source: 'civilizations',
+    paint: {
+      'line-color': ['get', 'color'],
+      'line-width': 1.5,
+    },
+  });
+
+  let hoveredFeatureId: number | string | undefined;
+
+  map.on('mousemove', FILL_LAYER, (e) => {
+    map.getCanvas().style.cursor = 'pointer';
+    if (!e.features?.length) {
+      return;
+    }
+    const featureId = e.features[0].id;
+    if (hoveredFeatureId !== undefined && hoveredFeatureId !== featureId) {
+      map.setFeatureState({ source: 'civilizations', id: hoveredFeatureId }, { hover: false });
+    }
+    hoveredFeatureId = featureId;
+    map.setFeatureState({ source: 'civilizations', id: hoveredFeatureId }, { hover: true });
+  });
+
+  map.on('mouseleave', FILL_LAYER, () => {
+    map.getCanvas().style.cursor = '';
+    if (hoveredFeatureId !== undefined) {
+      map.setFeatureState({ source: 'civilizations', id: hoveredFeatureId }, { hover: false });
+    }
+    hoveredFeatureId = undefined;
+  });
+
+  const popup = new maplibregl.Popup({ offset: 12 });
+
+  map.on('click', FILL_LAYER, (e) => {
+    const feature = e.features?.[0];
+    if (!feature) {
+      return;
+    }
+    const p = feature.properties as Record<string, string>;
+    popup
+      .setLngLat(e.lngLat)
+      .setHTML(`
+        <strong>${p.civilisation}</strong> — ${p.lieu}<br/>
+        <em>${p.dateLabel}</em><br/>
+        <p>${p.evenement}</p>
+        <p>${p.action}</p>
+      `)
       .addTo(map);
+  });
+
+  function applyYearFilter(year: number): void {
+    const filter = visibilityFilter(year);
+    map.setFilter(FILL_LAYER, filter);
+    map.setFilter(OUTLINE_LAYER, filter);
   }
 
-  applyZoomScale();
-  map.on('zoom', applyZoomScale);
+  applyYearFilter(initialYear);
 
   const timeline = createTimeline({
     minYear,
