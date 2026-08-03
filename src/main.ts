@@ -102,7 +102,7 @@ function formatEventDate(event: CivilizationEvent): string {
   return `${debut} – ${formatYear(parseInt(event.dateFin, 10))}`;
 }
 
-const TIMELINE_MIN_YEAR = -12000;
+const TIMELINE_MIN_YEAR = -10000;
 const FILL_LAYER = 'civilizations-fill';
 const OUTLINE_LAYER = 'civilizations-outline';
 const LABEL_LAYER = 'civilizations-label';
@@ -174,12 +174,14 @@ map.on('load', () => {
 
   const prepared: PreparedEvent[] = civEvents.map((event) => ({
     properties: {
+      id: event.id,
       civilisation: event.civilisation,
       color: colorForCivilisation(event.civilisation),
       dateLabel: formatEventDate(event),
       lieu: event.lieu.nom,
       evenement: event.evenement,
       action: event.action,
+      ...(event.source ? { source: event.source } : {}),
     },
     baseRings: polygonCoordinatesForEvent(event),
     center: [event.lieu.lon, event.lieu.lat],
@@ -261,6 +263,7 @@ map.on('load', () => {
   });
 
   const popup = new maplibregl.Popup({ offset: 12 });
+  let openPopupEventId: string | undefined;
 
   map.on('click', FILL_LAYER, (e) => {
     const feature = e.features?.[0];
@@ -268,6 +271,7 @@ map.on('load', () => {
       return;
     }
     const p = feature.properties as Record<string, string>;
+    openPopupEventId = p.id;
     popup
       .setLngLat(e.lngLat)
       .setHTML(`
@@ -275,14 +279,28 @@ map.on('load', () => {
         <em>${p.dateLabel}</em><br/>
         <p>${p.evenement}</p>
         <p>${p.action}</p>
+        ${p.source ? `<p><a href="${p.source}" target="_blank" rel="noopener noreferrer">Source</a></p>` : ''}
       `)
       .addTo(map);
+  });
+
+  popup.on('close', () => {
+    openPopupEventId = undefined;
   });
 
   const source = map.getSource('civilizations') as maplibregl.GeoJSONSource;
 
   function applyYear(year: number): void {
-    source.setData(buildFeatureCollection(prepared, year));
+    const collection = buildFeatureCollection(prepared, year);
+    source.setData(collection);
+
+    // Ferme le cartel si la civilisation qu'il décrit vient de disparaître (fondu terminé).
+    if (
+      openPopupEventId !== undefined &&
+      !collection.features.some((feature) => feature.properties?.id === openPopupEventId)
+    ) {
+      popup.remove();
+    }
   }
 
   const timeline = createTimeline({
