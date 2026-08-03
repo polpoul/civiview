@@ -105,6 +105,7 @@ function formatEventDate(event: CivilizationEvent): string {
 const TIMELINE_MIN_YEAR = -12000;
 const FILL_LAYER = 'civilizations-fill';
 const OUTLINE_LAYER = 'civilizations-outline';
+const LABEL_LAYER = 'civilizations-label';
 
 // Filtre MapLibre : visible si dateDebut <= currentYear <= dateFin (dateFin absente = jamais de fin).
 function visibilityFilter(currentYear: number): maplibregl.ExpressionSpecification {
@@ -177,6 +178,25 @@ map.on('load', () => {
     },
   });
 
+  // Nom de la civilisation centré sur son territoire (MapLibre place le label automatiquement
+  // au point le plus "central" du polygone, même pour des formes concaves).
+  map.addLayer({
+    id: LABEL_LAYER,
+    type: 'symbol',
+    source: 'civilizations',
+    layout: {
+      'text-field': ['get', 'civilisation'],
+      'text-font': ['Noto Sans Bold'],
+      'text-size': 12,
+      'text-max-width': 8,
+    },
+    paint: {
+      'text-color': '#1f2937',
+      'text-halo-color': 'rgba(255, 255, 255, 0.85)',
+      'text-halo-width': 1.2,
+    },
+  });
+
   let hoveredFeatureId: number | string | undefined;
 
   map.on('mousemove', FILL_LAYER, (e) => {
@@ -223,6 +243,7 @@ map.on('load', () => {
     const filter = visibilityFilter(year);
     map.setFilter(FILL_LAYER, filter);
     map.setFilter(OUTLINE_LAYER, filter);
+    map.setFilter(LABEL_LAYER, filter);
   }
 
   applyYearFilter(initialYear);
