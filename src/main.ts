@@ -50,17 +50,20 @@ function mulberry32(seed: number): () => number {
   };
 }
 
+function closeRing(ring: number[][]): number[][] {
+  const [firstLon, firstLat] = ring[0];
+  const [lastLon, lastLat] = ring[ring.length - 1];
+  if (firstLon !== lastLon || firstLat !== lastLat) {
+    return [...ring, ring[0]];
+  }
+  return ring;
+}
+
 // Forme organique par défaut : un polygone irrégulier centré sur `lieu`, dont la surface approche `etendue`.
 // Si `event.territoire` est fourni, il est utilisé tel quel à la place (contour précis).
-function polygonForEvent(event: CivilizationEvent): number[][] {
+function outerRingForEvent(event: CivilizationEvent): number[][] {
   if (event.territoire && event.territoire.length >= 3) {
-    const ring = event.territoire.map((p) => [p.lon, p.lat]);
-    const [firstLon, firstLat] = ring[0];
-    const [lastLon, lastLat] = ring[ring.length - 1];
-    if (firstLon !== lastLon || firstLat !== lastLat) {
-      ring.push(ring[0]);
-    }
-    return ring;
+    return closeRing(event.territoire.map((p) => [p.lon, p.lat]));
   }
 
   const areaKm2 = event.etendue ?? DEFAULT_ETENDUE_KM2;
@@ -80,6 +83,15 @@ function polygonForEvent(event: CivilizationEvent): number[][] {
   }
   ring.push(ring[0]);
   return ring;
+}
+
+// Anneau extérieur + trous (GeoJSON : le premier anneau est le contour, les suivants sont des exclusions).
+function polygonCoordinatesForEvent(event: CivilizationEvent): number[][][] {
+  const outer = outerRingForEvent(event);
+  const holes = (event.exclusions ?? []).map((exclusion) =>
+    closeRing(exclusion.map((p) => [p.lon, p.lat])),
+  );
+  return [outer, ...holes];
 }
 
 function formatEventDate(event: CivilizationEvent): string {
@@ -130,7 +142,7 @@ map.on('load', () => {
     },
     geometry: {
       type: 'Polygon',
-      coordinates: [polygonForEvent(event)],
+      coordinates: polygonCoordinatesForEvent(event),
     },
   }));
 

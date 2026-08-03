@@ -20,6 +20,11 @@ export interface CivilizationEvent {
    * Si fourni, remplace la forme générée automatiquement à partir de `etendue`.
    */
   territoire?: { lat: number; lon: number }[];
+  /**
+   * Zones exclues du territoire (enclaves, ex: un royaume non contrôlé).
+   * Chaque élément est un contour fermé sur lui-même, indépendant de `territoire`.
+   */
+  exclusions?: { lat: number; lon: number }[][];
   /** Importance de l'événement, de 1 (mineur) à 5 (majeur). */
   importance?: number;
   categorie?: string[];
