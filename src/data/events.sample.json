@@ -662,5 +662,423 @@
     "importance": 5,
     "categorie": ["politique"],
     "source": "https://fr.wikipedia.org/wiki/Époque_hellénistique"
+  },
+  {
+    "id": "civilisation-sumerienne",
+    "civilisation": "Civilisation sumérienne",
+    "type": "fondation",
+    "dateDebut": "-3500",
+    "dateFin": "-2000",
+    "lieu": { "lat": 31.3, "lon": 45.0, "nom": "Uruk" },
+    "evenement": "Premières cités-États de Mésopotamie",
+    "action": "Développement urbain, écriture cunéiforme et organisation politique en villes-États.",
+    "etendue": 300000,
+    "importance": 5,
+    "categorie": ["politique", "urbaine", "culturelle"],
+    "source": "https://fr.wikipedia.org/wiki/Sumer",
+    "territoire": [
+      { "lat": 31.3, "lon": 45.0 },
+      { "lat": 32.5, "lon": 44.4 },
+      { "lat": 30.9, "lon": 47.0 }
+    ]
+  },
+  {
+    "id": "civilisation-egyptienne-antique",
+    "civilisation": "Égypte antique",
+    "type": "fondation",
+    "dateDebut": "-3100",
+    "dateFin": "-30",
+    "lieu": { "lat": 29.9, "lon": 31.2, "nom": "Memphis" },
+    "evenement": "Unification de la vallée du Nil",
+    "action": "Constitution d'un État centralisé autour du Nil, avec pharaons, administration et monuments monumentaux.",
+    "etendue": 1000000,
+    "importance": 5,
+    "categorie": ["politique", "religieuse", "urbaine"],
+    "source": "https://fr.wikipedia.org/wiki/%C3%89gypte_antique",
+    "territoire": [
+      { "lat": 31.2, "lon": 31.2 },
+      { "lat": 26.8, "lon": 30.8 },
+      { "lat": 24.0, "lon": 32.9 }
+    ]
+  },
+  {
+    "id": "civilisation-de-l-indus",
+    "civilisation": "Civilisation de l'Indus",
+    "type": "fondation",
+    "dateDebut": "-2600",
+    "dateFin": "-1900",
+    "lieu": { "lat": 30.7, "lon": 72.9, "nom": "Harappa" },
+    "evenement": "Épanouissement harappéen",
+    "action": "Développement de villes planifiées, d'un vaste réseau d'échanges et d'une culture urbaine de la vallée de l'Indus.",
+    "etendue": 1200000,
+    "importance": 5,
+    "categorie": ["urbaine", "économique", "culturelle"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_de_la_vall%C3%A9e_de_l%27Indus",
+    "territoire": [
+      { "lat": 30.7, "lon": 72.9 },
+      { "lat": 28.2, "lon": 68.5 },
+      { "lat": 23.0, "lon": 72.6 }
+    ]
+  },
+  {
+    "id": "dynastie-shang",
+    "civilisation": "Chine antique (dynastie Shang)",
+    "type": "fondation",
+    "dateDebut": "-1600",
+    "dateFin": "-1046",
+    "lieu": { "lat": 35.8, "lon": 114.3, "nom": "Anyang" },
+    "evenement": "Consolidation des premiers États chinois historiques",
+    "action": "Mise en place d'un pouvoir dynastique, de la métallurgie du bronze et d'une administration rituelle et militaire.",
+    "etendue": 800000,
+    "importance": 5,
+    "categorie": ["politique", "militaire", "culturelle"],
+    "source": "https://fr.wikipedia.org/wiki/Dynastie_Shang",
+    "territoire": [
+      { "lat": 35.8, "lon": 114.3 },
+      { "lat": 34.7, "lon": 113.6 },
+      { "lat": 39.1, "lon": 117.2 }
+    ]
+  },
+  {
+    "id": "civilisation-minoenne",
+    "civilisation": "Civilisation minoenne",
+    "type": "fondation",
+    "dateDebut": "-3000",
+    "dateFin": "-1100",
+    "lieu": { "lat": 35.3, "lon": 25.1, "nom": "Cnossos" },
+    "evenement": "Développement des palais crétois",
+    "action": "Civilisation égéenne centrée sur des palais, des échanges maritimes et une culture matérielle influente.",
+    "etendue": 70000,
+    "importance": 4,
+    "categorie": ["maritime", "culturelle", "économique"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_minoenne",
+    "territoire": [
+      { "lat": 35.3, "lon": 25.1 },
+      { "lat": 35.0, "lon": 24.8 },
+      { "lat": 35.4, "lon": 26.0 }
+    ]
+  },
+  {
+    "id": "civilisation-mycenienne",
+    "civilisation": "Civilisation mycénienne",
+    "type": "fondation",
+    "dateDebut": "-1600",
+    "dateFin": "-1100",
+    "lieu": { "lat": 37.8, "lon": 22.7, "nom": "Mycènes" },
+    "evenement": "Domination des palais mycéniens",
+    "action": "Développement de centres fortifiés, d'une aristocratie guerrière et d'un système administratif palatial.",
+    "etendue": 90000,
+    "importance": 4,
+    "categorie": ["politique", "militaire", "urbaine"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne",
+    "territoire": [
+      { "lat": 37.8, "lon": 22.7 },
+      { "lat": 38.4, "lon": 23.5 },
+      { "lat": 36.4, "lon": 22.9 }
+    ]
+  },
+  {
+    "id": "grece-antique",
+    "civilisation": "Grèce antique",
+    "type": "expansion",
+    "dateDebut": "-800",
+    "dateFin": "-146",
+    "lieu": { "lat": 37.9, "lon": 23.7, "nom": "Athènes" },
+    "evenement": "Diffusion des cités grecques",
+    "action": "Expansion du monde des cités grecques, de la philosophie, de la démocratie et des réseaux coloniaux méditerranéens.",
+    "etendue": 600000,
+    "importance": 5,
+    "categorie": ["politique", "culturelle", "maritime"],
+    "source": "https://fr.wikipedia.org/wiki/Gr%C3%A8ce_antique",
+    "territoire": [
+      { "lat": 37.9, "lon": 23.7 },
+      { "lat": 39.6, "lon": 19.9 },
+      { "lat": 38.2, "lon": 20.5 }
+    ]
+  },
+  {
+    "id": "rome-antique",
+    "civilisation": "Rome antique",
+    "type": "expansion",
+    "dateDebut": "-753",
+    "dateFin": "476",
+    "lieu": { "lat": 41.9, "lon": 12.5, "nom": "Rome" },
+    "evenement": "Expansion de Rome en Méditerranée",
+    "action": "Constitution d'un empire méditerranéen fondé sur le droit, l'armée, les routes et l'administration provinciale.",
+    "etendue": 5000000,
+    "importance": 5,
+    "categorie": ["politique", "militaire", "juridique"],
+    "source": "https://fr.wikipedia.org/wiki/Rome_antique",
+    "territoire": [
+      { "lat": 41.9, "lon": 12.5 },
+      { "lat": 36.8, "lon": 10.2 },
+      { "lat": 48.8, "lon": 2.3 }
+    ]
+  },
+  {
+    "id": "empire-perse-achaemenide",
+    "civilisation": "Empire perse achéménide",
+    "type": "expansion",
+    "dateDebut": "-550",
+    "dateFin": "-330",
+    "lieu": { "lat": 32.7, "lon": 51.7, "nom": "Persépolis" },
+    "evenement": "Formation d'un empire transcontinental",
+    "action": "Unification d'un vaste espace allant du plateau iranien à l'Égypte et à l'Asie Mineure sous une administration impériale.",
+    "etendue": 8000000,
+    "importance": 5,
+    "categorie": ["politique", "militaire", "administrative"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide",
+    "territoire": [
+      { "lat": 32.7, "lon": 51.7 },
+      { "lat": 36.2, "lon": 49.7 },
+      { "lat": 30.0, "lon": 31.2 }
+    ]
+  },
+  {
+    "id": "royaume-de-kush",
+    "civilisation": "Royaume de Koush",
+    "type": "expansion",
+    "dateDebut": "-1070",
+    "dateFin": "350",
+    "lieu": { "lat": 15.6, "lon": 32.5, "nom": "Napata" },
+    "evenement": "Puissance nilotique de Nubie",
+    "action": "Développement d'un royaume africain autonome, puis conquête de l'Égypte par les pharaons koushites.",
+    "etendue": 1000000,
+    "importance": 4,
+    "categorie": ["politique", "militaire", "religieuse"],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Koush",
+    "territoire": [
+      { "lat": 15.6, "lon": 32.5 },
+      { "lat": 18.0, "lon": 30.5 },
+      { "lat": 12.1, "lon": 31.8 }
+    ]
+  },
+  {
+    "id": "royaume-d-axoum",
+    "civilisation": "Royaume d'Axoum",
+    "type": "expansion",
+    "dateDebut": "100",
+    "dateFin": "940",
+    "lieu": { "lat": 14.1, "lon": 38.7, "nom": "Axoum" },
+    "evenement": "Puissance commerciale de la Corne de l'Afrique",
+    "action": "Émergence d'un royaume marchand contrôlant les routes entre Afrique, Arabie et océan Indien.",
+    "etendue": 900000,
+    "importance": 4,
+    "categorie": ["commerciale", "politique", "religieuse"],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_d%27Axoum",
+    "territoire": [
+      { "lat": 14.1, "lon": 38.7 },
+      { "lat": 12.6, "lon": 37.5 },
+      { "lat": 16.0, "lon": 39.0 }
+    ]
+  },
+  {
+    "id": "civilisation-olmec",
+    "civilisation": "Civilisation olmèque",
+    "type": "fondation",
+    "dateDebut": "-1500",
+    "dateFin": "-400",
+    "lieu": { "lat": 18.0, "lon": -94.7, "nom": "San Lorenzo" },
+    "evenement": "Première grande civilisation mésoaméricaine",
+    "action": "Émergence de centres cérémoniels et d'une influence culturelle durable dans la Mésoamérique.",
+    "etendue": 150000,
+    "importance": 4,
+    "categorie": ["religieuse", "culturelle", "urbaine"],
+    "source": "https://fr.wikipedia.org/wiki/Olm%C3%A8ques",
+    "territoire": [
+      { "lat": 18.0, "lon": -94.7 },
+      { "lat": 17.8, "lon": -95.0 },
+      { "lat": 18.2, "lon": -93.8 }
+    ]
+  },
+  {
+    "id": "civilisation-maya",
+    "civilisation": "Civilisation maya",
+    "type": "expansion",
+    "dateDebut": "-2000",
+    "dateFin": "1697",
+    "lieu": { "lat": 17.5, "lon": -89.0, "nom": "Tikal" },
+    "evenement": "Apogée des cités mayas",
+    "action": "Développement de cités-États, d'une écriture hiéroglyphique, de mathématiques et de calendriers complexes.",
+    "etendue": 300000,
+    "importance": 5,
+    "categorie": ["culturelle", "politique", "religieuse"],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_maya",
+    "territoire": [
+      { "lat": 17.5, "lon": -89.0 },
+      { "lat": 14.9, "lon": -90.2 },
+      { "lat": 20.6, "lon": -87.8 }
+    ]
+  },
+  {
+    "id": "empire-aztec",
+    "civilisation": "Empire aztèque",
+    "type": "expansion",
+    "dateDebut": "1428",
+    "dateFin": "1521",
+    "lieu": { "lat": 19.4, "lon": -99.1, "nom": "Tenochtitlan" },
+    "evenement": "Domination de la vallée de Mexico",
+    "action": "Construction d'un empire tributaire centré sur Tenochtitlan et fondé sur la guerre et le prélèvement de tributs.",
+    "etendue": 200000,
+    "importance": 5,
+    "categorie": ["politique", "militaire", "religieuse"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que",
+    "territoire": [
+      { "lat": 19.4, "lon": -99.1 },
+      { "lat": 19.0, "lon": -98.2 },
+      { "lat": 18.7, "lon": -96.9 }
+    ]
+  },
+  {
+    "id": "empire-inca",
+    "civilisation": "Empire inca",
+    "type": "expansion",
+    "dateDebut": "1438",
+    "dateFin": "1533",
+    "lieu": { "lat": -13.5, "lon": -71.9, "nom": "Cuzco" },
+    "evenement": "Expansion andine des Incas",
+    "action": "Unification d'un vaste ensemble andin par routes, administration, redistribution et intégration des peuples conquis.",
+    "etendue": 4000000,
+    "importance": 5,
+    "categorie": ["politique", "militaire", "administrative"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_inca",
+    "territoire": [
+      { "lat": -13.5, "lon": -71.9 },
+      { "lat": -12.0, "lon": -77.0 },
+      { "lat": -16.5, "lon": -68.2 }
+    ]
+  },
+  {
+    "id": "empire-ghana",
+    "civilisation": "Empire du Ghana",
+    "type": "expansion",
+    "dateDebut": "700",
+    "dateFin": "1240",
+    "lieu": { "lat": 15.3, "lon": -9.6, "nom": "Koumbi Saleh" },
+    "evenement": "Contrôle des routes transsahariennes",
+    "action": "Puissance ouest-africaine fondée sur le commerce de l'or, du sel et le contrôle des caravanes.",
+    "etendue": 800000,
+    "importance": 4,
+    "categorie": ["commerciale", "politique", "militaire"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_du_Ghana",
+    "territoire": [
+      { "lat": 15.3, "lon": -9.6 },
+      { "lat": 13.9, "lon": -4.5 },
+      { "lat": 17.0, "lon": -11.0 }
+    ]
+  },
+  {
+    "id": "empire-du-mali",
+    "civilisation": "Empire du Mali",
+    "type": "expansion",
+    "dateDebut": "1235",
+    "dateFin": "1600",
+    "lieu": { "lat": 13.4, "lon": -15.3, "nom": "Niani" },
+    "evenement": "Apogée du Mali",
+    "action": "Grand empire soudano-sahélien contrôlant l'or et les routes commerciales, marqué par le règne de Mansa Moussa.",
+    "etendue": 1200000,
+    "importance": 5,
+    "categorie": ["commerciale", "politique", "religieuse"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_du_Mali",
+    "territoire": [
+      { "lat": 13.4, "lon": -15.3 },
+      { "lat": 14.5, "lon": -4.0 },
+      { "lat": 12.0, "lon": -9.0 }
+    ]
+  },
+  {
+    "id": "empire-songhai",
+    "civilisation": "Empire songhaï",
+    "type": "expansion",
+    "dateDebut": "1464",
+    "dateFin": "1591",
+    "lieu": { "lat": 16.0, "lon": -3.0, "nom": "Gao" },
+    "evenement": "Domination du Niger intérieur",
+    "action": "Formation d'un vaste empire ouest-africain autour du fleuve Niger et du commerce transsaharien.",
+    "etendue": 1500000,
+    "importance": 4,
+    "categorie": ["politique", "commerciale", "militaire"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF",
+    "territoire": [
+      { "lat": 16.0, "lon": -3.0 },
+      { "lat": 14.8, "lon": -5.2 },
+      { "lat": 17.2, "lon": 0.9 }
+    ]
+  },
+  {
+    "id": "civilisation-chinoise-imperiale",
+    "civilisation": "Civilisation chinoise impériale",
+    "type": "expansion",
+    "dateDebut": "-221",
+    "dateFin": "1912",
+    "lieu": { "lat": 34.3, "lon": 108.9, "nom": "Xi'an" },
+    "evenement": "Unification impériale de la Chine",
+    "action": "Constitution d'un État impérial durable autour d'une administration centrale, d'examens et d'une continuité culturelle forte.",
+    "etendue": 9000000,
+    "importance": 5,
+    "categorie": ["politique", "administrative", "culturelle"],
+    "source": "https://fr.wikipedia.org/wiki/Histoire_de_la_Chine",
+    "territoire": [
+      { "lat": 34.3, "lon": 108.9 },
+      { "lat": 39.9, "lon": 116.4 },
+      { "lat": 31.2, "lon": 121.5 }
+    ]
+  },
+  {
+    "id": "civilisation-japonaise-imperiale",
+    "civilisation": "Civilisation japonaise impériale",
+    "type": "expansion",
+    "dateDebut": "-660",
+    "dateFin": "1945",
+    "lieu": { "lat": 35.7, "lon": 139.7, "nom": "Kyoto" },
+    "evenement": "Formation de l'État impérial japonais",
+    "action": "Consolidation d'un pouvoir impérial, puis modernisation rapide de l'État et projection régionale en Asie orientale.",
+    "etendue": 378000,
+    "importance": 4,
+    "categorie": ["politique", "culturelle", "militaire"],
+    "source": "https://fr.wikipedia.org/wiki/Histoire_du_Japon",
+    "territoire": [
+      { "lat": 35.7, "lon": 139.7 },
+      { "lat": 34.7, "lon": 135.5 },
+      { "lat": 43.1, "lon": 141.3 }
+    ]
+  },
+  {
+    "id": "civilisation-khmer",
+    "civilisation": "Empire khmer",
+    "type": "expansion",
+    "dateDebut": "802",
+    "dateFin": "1431",
+    "lieu": { "lat": 13.4, "lon": 103.9, "nom": "Angkor" },
+    "evenement": "Apogée d'Angkor",
+    "action": "Construction d'un grand empire d'Asie du Sud-Est centré sur Angkor, son hydrologie et ses temples monumentaux.",
+    "etendue": 1000000,
+    "importance": 4,
+    "categorie": ["religieuse", "politique", "urbaine"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_khmer",
+    "territoire": [
+      { "lat": 13.4, "lon": 103.9 },
+      { "lat": 12.8, "lon": 104.0 },
+      { "lat": 14.5, "lon": 102.5 }
+    ]
+  },
+  {
+    "id": "civilisation-romaine-byzantine",
+    "civilisation": "Empire byzantin",
+    "type": "expansion",
+    "dateDebut": "395",
+    "dateFin": "1453",
+    "lieu": { "lat": 41.0, "lon": 28.9, "nom": "Constantinople" },
+    "evenement": "Continuation orientale de Rome",
+    "action": "Poursuite de l'héritage romain en Orient, avec administration impériale, christianisme et culture grecque.",
+    "etendue": 3000000,
+    "importance": 5,
+    "categorie": ["politique", "religieuse", "culturelle"],
+    "source": "https://fr.wikipedia.org/wiki/Empire_byzantin",
+    "territoire": [
+      { "lat": 41.0, "lon": 28.9 },
+      { "lat": 37.9, "lon": 23.7 },
+      { "lat": 33.9, "lon": 35.5 }
+    ]
   }
 ]
