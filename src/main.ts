@@ -55,7 +55,11 @@ function mulberry32(seed: number): () => number {
 function polygonForEvent(event: CivilizationEvent): number[][] {
   if (event.territoire && event.territoire.length >= 3) {
     const ring = event.territoire.map((p) => [p.lon, p.lat]);
-    ring.push(ring[0]);
+    const [firstLon, firstLat] = ring[0];
+    const [lastLon, lastLat] = ring[ring.length - 1];
+    if (firstLon !== lastLon || firstLat !== lastLat) {
+      ring.push(ring[0]);
+    }
     return ring;
   }
 

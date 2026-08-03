@@ -195,7 +195,27 @@
     "etendue": 350000,
     "importance": 5,
     "categorie": ["politique", "militaire", "culture"],
-    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne",
+    "territoire": [
+      { "lat": 39.85, "lon": 20.10 },
+      { "lat": 40.25, "lon": 21.30 },
+      { "lat": 40.15, "lon": 22.90 },
+      { "lat": 39.70, "lon": 24.20 },
+      { "lat": 39.20, "lon": 25.40 },
+      { "lat": 38.20, "lon": 26.80 },
+      { "lat": 37.10, "lon": 27.30 },
+      { "lat": 36.10, "lon": 27.90 },
+      { "lat": 35.10, "lon": 27.60 },
+      { "lat": 34.75, "lon": 26.10 },
+      { "lat": 34.60, "lon": 24.30 },
+      { "lat": 34.65, "lon": 22.60 },
+      { "lat": 35.10, "lon": 21.10 },
+      { "lat": 36.10, "lon": 20.30 },
+      { "lat": 37.00, "lon": 19.80 },
+      { "lat": 38.10, "lon": 19.60 },
+      { "lat": 39.00, "lon": 19.70 },
+      { "lat": 39.85, "lon": 20.10 }
+    ]
   },
   {
     "id": "mycenes-guerre-troie",
