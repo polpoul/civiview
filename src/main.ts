@@ -117,6 +117,11 @@ interface PreparedEvent {
   center: [number, number];
   dateDebut: number;
   dateFin: number | undefined;
+  civilisation: string;
+  /** Sert à choisir quelle forme porte l'étiquette quand plusieurs événements de la même
+   * civilisation sont actifs en même temps : un contour précis passe toujours devant une
+   * forme générée, puis on départage par étendue. */
+  labelPriority: number;
 }
 
 // 0 en dehors de la fenêtre [dateDebut-FADE_YEARS, dateFin+FADE_YEARS], 1 pendant la période active,
@@ -142,20 +147,35 @@ function scaleRing(ring: number[][], center: [number, number], scale: number): n
 
 function buildFeatureCollection(prepared: PreparedEvent[], year: number): GeoJSON.FeatureCollection {
   const features: GeoJSON.Feature[] = [];
+  const bestPriorityByCiv = new Map<string, number>();
+
   for (const event of prepared) {
     const scale = computeScale(year, event.dateDebut, event.dateFin);
     if (scale <= 0) {
       continue;
     }
+    const current = bestPriorityByCiv.get(event.civilisation);
+    if (current === undefined || event.labelPriority > current) {
+      bestPriorityByCiv.set(event.civilisation, event.labelPriority);
+    }
     features.push({
       type: 'Feature',
-      properties: event.properties,
+      properties: { ...event.properties, civilisation: event.civilisation, labelPriority: event.labelPriority },
       geometry: {
         type: 'Polygon',
         coordinates: event.baseRings.map((ring) => scaleRing(ring, event.center, scale)),
       },
     });
   }
+
+  // Une seule étiquette par civilisation à la fois : seule la forme la plus "prioritaire"
+  // (contour précis, puis plus grande étendue) affiche son nom quand plusieurs se chevauchent.
+  for (const feature of features) {
+    const civ = feature.properties?.civilisation as string;
+    const priority = feature.properties?.labelPriority as number;
+    feature.properties!.showLabel = priority === bestPriorityByCiv.get(civ);
+  }
+
   return { type: 'FeatureCollection', features };
 }
 
@@ -187,6 +207,8 @@ map.on('load', () => {
     center: [event.lieu.lon, event.lieu.lat],
     dateDebut: parseInt(event.dateDebut, 10),
     dateFin: event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10),
+    civilisation: event.civilisation,
+    labelPriority: (event.territoire ? 1e12 : 0) + (event.etendue ?? DEFAULT_ETENDUE_KM2),
   }));
 
   map.addSource('civilizations', {
@@ -226,6 +248,7 @@ map.on('load', () => {
     id: LABEL_LAYER,
     type: 'symbol',
     source: 'civilizations',
+    filter: ['==', ['get', 'showLabel'], true],
     layout: {
       'text-field': ['get', 'civilisation'],
       'text-font': ['Noto Sans Bold'],
