@@ -677,9 +677,16 @@
     "categorie": ["politique", "urbaine", "culturelle"],
     "source": "https://fr.wikipedia.org/wiki/Sumer",
     "territoire": [
-      { "lat": 31.3, "lon": 45.0 },
-      { "lat": 32.5, "lon": 44.4 },
-      { "lat": 30.9, "lon": 47.0 }
+      { "lat": 33.0, "lon": 44.2 },
+      { "lat": 33.3, "lon": 45.0 },
+      { "lat": 32.5, "lon": 46.2 },
+      { "lat": 31.5, "lon": 47.2 },
+      { "lat": 30.2, "lon": 48.2 },
+      { "lat": 29.8, "lon": 47.8 },
+      { "lat": 30.3, "lon": 46.5 },
+      { "lat": 31.0, "lon": 45.5 },
+      { "lat": 31.9, "lon": 44.3 },
+      { "lat": 33.0, "lon": 44.2 }
     ]
   },
   {
@@ -696,9 +703,19 @@
     "categorie": ["politique", "religieuse", "urbaine"],
     "source": "https://fr.wikipedia.org/wiki/%C3%89gypte_antique",
     "territoire": [
-      { "lat": 31.2, "lon": 31.2 },
-      { "lat": 26.8, "lon": 30.8 },
-      { "lat": 24.0, "lon": 32.9 }
+      { "lat": 31.6, "lon": 30.0 },
+      { "lat": 31.5, "lon": 31.5 },
+      { "lat": 31.3, "lon": 32.3 },
+      { "lat": 29.9, "lon": 32.5 },
+      { "lat": 27.8, "lon": 32.0 },
+      { "lat": 25.7, "lon": 32.6 },
+      { "lat": 24.0, "lon": 32.9 },
+      { "lat": 23.9, "lon": 32.5 },
+      { "lat": 25.5, "lon": 31.8 },
+      { "lat": 27.5, "lon": 30.9 },
+      { "lat": 29.5, "lon": 30.6 },
+      { "lat": 31.0, "lon": 29.9 },
+      { "lat": 31.6, "lon": 30.0 }
     ]
   },
   {
@@ -715,9 +732,16 @@
     "categorie": ["urbaine", "économique", "culturelle"],
     "source": "https://fr.wikipedia.org/wiki/Civilisation_de_la_vall%C3%A9e_de_l%27Indus",
     "territoire": [
-      { "lat": 30.7, "lon": 72.9 },
-      { "lat": 28.2, "lon": 68.5 },
-      { "lat": 23.0, "lon": 72.6 }
+      { "lat": 33.7, "lon": 73.0 },
+      { "lat": 32.0, "lon": 75.0 },
+      { "lat": 29.5, "lon": 75.5 },
+      { "lat": 26.5, "lon": 73.5 },
+      { "lat": 23.5, "lon": 71.5 },
+      { "lat": 22.8, "lon": 69.0 },
+      { "lat": 24.5, "lon": 67.4 },
+      { "lat": 27.0, "lon": 68.0 },
+      { "lat": 30.0, "lon": 70.5 },
+      { "lat": 33.7, "lon": 73.0 }
     ]
   },
   {
@@ -734,9 +758,15 @@
     "categorie": ["politique", "militaire", "culturelle"],
     "source": "https://fr.wikipedia.org/wiki/Dynastie_Shang",
     "territoire": [
-      { "lat": 35.8, "lon": 114.3 },
-      { "lat": 34.7, "lon": 113.6 },
-      { "lat": 39.1, "lon": 117.2 }
+      { "lat": 40.0, "lon": 114.5 },
+      { "lat": 39.0, "lon": 117.5 },
+      { "lat": 37.0, "lon": 119.0 },
+      { "lat": 35.0, "lon": 118.0 },
+      { "lat": 33.5, "lon": 115.5 },
+      { "lat": 33.8, "lon": 112.5 },
+      { "lat": 35.5, "lon": 110.5 },
+      { "lat": 38.0, "lon": 111.5 },
+      { "lat": 40.0, "lon": 114.5 }
     ]
   },
   {
@@ -753,9 +783,15 @@
     "categorie": ["maritime", "culturelle", "économique"],
     "source": "https://fr.wikipedia.org/wiki/Civilisation_minoenne",
     "territoire": [
-      { "lat": 35.3, "lon": 25.1 },
-      { "lat": 35.0, "lon": 24.8 },
-      { "lat": 35.4, "lon": 26.0 }
+      { "lat": 35.55, "lon": 23.6 },
+      { "lat": 35.5, "lon": 24.5 },
+      { "lat": 35.45, "lon": 25.7 },
+      { "lat": 35.35, "lon": 26.3 },
+      { "lat": 35.05, "lon": 26.0 },
+      { "lat": 34.9, "lon": 25.0 },
+      { "lat": 34.95, "lon": 24.0 },
+      { "lat": 35.2, "lon": 23.5 },
+      { "lat": 35.55, "lon": 23.6 }
     ]
   },
   {
@@ -770,12 +806,7 @@
     "etendue": 90000,
     "importance": 4,
     "categorie": ["politique", "militaire", "urbaine"],
-    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne",
-    "territoire": [
-      { "lat": 37.8, "lon": 22.7 },
-      { "lat": 38.4, "lon": 23.5 },
-      { "lat": 36.4, "lon": 22.9 }
-    ]
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_myc%C3%A9nienne"
   },
   {
     "id": "grece-antique",
@@ -791,9 +822,17 @@
     "categorie": ["politique", "culturelle", "maritime"],
     "source": "https://fr.wikipedia.org/wiki/Gr%C3%A8ce_antique",
     "territoire": [
-      { "lat": 37.9, "lon": 23.7 },
-      { "lat": 39.6, "lon": 19.9 },
-      { "lat": 38.2, "lon": 20.5 }
+      { "lat": 41.0, "lon": 20.0 },
+      { "lat": 40.5, "lon": 23.0 },
+      { "lat": 39.5, "lon": 26.0 },
+      { "lat": 37.5, "lon": 27.2 },
+      { "lat": 36.0, "lon": 28.2 },
+      { "lat": 35.2, "lon": 25.7 },
+      { "lat": 34.9, "lon": 24.5 },
+      { "lat": 36.4, "lon": 22.8 },
+      { "lat": 38.0, "lon": 20.4 },
+      { "lat": 39.8, "lon": 19.7 },
+      { "lat": 41.0, "lon": 20.0 }
     ]
   },
   {
@@ -810,9 +849,25 @@
     "categorie": ["politique", "militaire", "juridique"],
     "source": "https://fr.wikipedia.org/wiki/Rome_antique",
     "territoire": [
-      { "lat": 41.9, "lon": 12.5 },
-      { "lat": 36.8, "lon": 10.2 },
-      { "lat": 48.8, "lon": 2.3 }
+      { "lat": 55.8, "lon": -4.0 },
+      { "lat": 51.5, "lon": 3.5 },
+      { "lat": 50.0, "lon": 8.5 },
+      { "lat": 47.5, "lon": 16.5 },
+      { "lat": 45.0, "lon": 15.5 },
+      { "lat": 41.3, "lon": 29.0 },
+      { "lat": 39.5, "lon": 40.0 },
+      { "lat": 37.0, "lon": 41.5 },
+      { "lat": 33.0, "lon": 35.8 },
+      { "lat": 31.2, "lon": 32.5 },
+      { "lat": 31.5, "lon": 29.5 },
+      { "lat": 32.0, "lon": 20.0 },
+      { "lat": 33.0, "lon": 11.0 },
+      { "lat": 35.7, "lon": -5.8 },
+      { "lat": 36.5, "lon": -6.3 },
+      { "lat": 43.5, "lon": -9.0 },
+      { "lat": 48.3, "lon": -4.5 },
+      { "lat": 51.0, "lon": 2.0 },
+      { "lat": 55.8, "lon": -4.0 }
     ]
   },
   {
@@ -829,9 +884,23 @@
     "categorie": ["politique", "militaire", "administrative"],
     "source": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide",
     "territoire": [
-      { "lat": 32.7, "lon": 51.7 },
-      { "lat": 36.2, "lon": 49.7 },
-      { "lat": 30.0, "lon": 31.2 }
+      { "lat": 40.5, "lon": 26.5 },
+      { "lat": 41.5, "lon": 35.0 },
+      { "lat": 40.0, "lon": 45.0 },
+      { "lat": 38.5, "lon": 55.0 },
+      { "lat": 37.0, "lon": 65.0 },
+      { "lat": 34.5, "lon": 71.5 },
+      { "lat": 29.0, "lon": 68.0 },
+      { "lat": 25.0, "lon": 61.5 },
+      { "lat": 26.5, "lon": 53.5 },
+      { "lat": 29.5, "lon": 48.5 },
+      { "lat": 31.2, "lon": 32.0 },
+      { "lat": 29.5, "lon": 25.0 },
+      { "lat": 32.5, "lon": 25.0 },
+      { "lat": 33.5, "lon": 35.5 },
+      { "lat": 36.5, "lon": 36.2 },
+      { "lat": 38.0, "lon": 27.0 },
+      { "lat": 40.5, "lon": 26.5 }
     ]
   },
   {
@@ -848,9 +917,17 @@
     "categorie": ["politique", "militaire", "religieuse"],
     "source": "https://fr.wikipedia.org/wiki/Royaume_de_Koush",
     "territoire": [
-      { "lat": 15.6, "lon": 32.5 },
-      { "lat": 18.0, "lon": 30.5 },
-      { "lat": 12.1, "lon": 31.8 }
+      { "lat": 21.9, "lon": 31.2 },
+      { "lat": 19.5, "lon": 30.8 },
+      { "lat": 18.0, "lon": 31.5 },
+      { "lat": 16.0, "lon": 32.5 },
+      { "lat": 13.5, "lon": 33.2 },
+      { "lat": 11.5, "lon": 32.5 },
+      { "lat": 11.0, "lon": 30.5 },
+      { "lat": 13.5, "lon": 29.0 },
+      { "lat": 16.5, "lon": 29.5 },
+      { "lat": 19.5, "lon": 29.8 },
+      { "lat": 21.9, "lon": 31.2 }
     ]
   },
   {
@@ -867,9 +944,17 @@
     "categorie": ["commerciale", "politique", "religieuse"],
     "source": "https://fr.wikipedia.org/wiki/Royaume_d%27Axoum",
     "territoire": [
-      { "lat": 14.1, "lon": 38.7 },
-      { "lat": 12.6, "lon": 37.5 },
-      { "lat": 16.0, "lon": 39.0 }
+      { "lat": 17.5, "lon": 38.5 },
+      { "lat": 16.0, "lon": 41.0 },
+      { "lat": 15.0, "lon": 43.0 },
+      { "lat": 13.0, "lon": 44.0 },
+      { "lat": 11.0, "lon": 42.5 },
+      { "lat": 9.0, "lon": 40.0 },
+      { "lat": 8.5, "lon": 37.5 },
+      { "lat": 10.5, "lon": 35.5 },
+      { "lat": 13.0, "lon": 35.8 },
+      { "lat": 15.5, "lon": 36.8 },
+      { "lat": 17.5, "lon": 38.5 }
     ]
   },
   {
@@ -886,9 +971,13 @@
     "categorie": ["religieuse", "culturelle", "urbaine"],
     "source": "https://fr.wikipedia.org/wiki/Olm%C3%A8ques",
     "territoire": [
-      { "lat": 18.0, "lon": -94.7 },
-      { "lat": 17.8, "lon": -95.0 },
-      { "lat": 18.2, "lon": -93.8 }
+      { "lat": 18.4, "lon": -95.2 },
+      { "lat": 18.5, "lon": -94.2 },
+      { "lat": 18.3, "lon": -93.3 },
+      { "lat": 17.7, "lon": -93.0 },
+      { "lat": 17.3, "lon": -94.0 },
+      { "lat": 17.6, "lon": -95.0 },
+      { "lat": 18.4, "lon": -95.2 }
     ]
   },
   {
@@ -905,9 +994,15 @@
     "categorie": ["culturelle", "politique", "religieuse"],
     "source": "https://fr.wikipedia.org/wiki/Civilisation_maya",
     "territoire": [
-      { "lat": 17.5, "lon": -89.0 },
-      { "lat": 14.9, "lon": -90.2 },
-      { "lat": 20.6, "lon": -87.8 }
+      { "lat": 21.5, "lon": -89.6 },
+      { "lat": 21.2, "lon": -87.0 },
+      { "lat": 18.5, "lon": -87.8 },
+      { "lat": 16.0, "lon": -88.8 },
+      { "lat": 14.8, "lon": -90.5 },
+      { "lat": 15.3, "lon": -92.3 },
+      { "lat": 17.8, "lon": -93.0 },
+      { "lat": 19.8, "lon": -90.5 },
+      { "lat": 21.5, "lon": -89.6 }
     ]
   },
   {
@@ -924,9 +1019,16 @@
     "categorie": ["politique", "militaire", "religieuse"],
     "source": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que",
     "territoire": [
-      { "lat": 19.4, "lon": -99.1 },
-      { "lat": 19.0, "lon": -98.2 },
-      { "lat": 18.7, "lon": -96.9 }
+      { "lat": 21.0, "lon": -99.8 },
+      { "lat": 20.0, "lon": -97.3 },
+      { "lat": 19.2, "lon": -96.1 },
+      { "lat": 17.0, "lon": -94.6 },
+      { "lat": 15.3, "lon": -92.5 },
+      { "lat": 16.5, "lon": -97.8 },
+      { "lat": 17.0, "lon": -100.5 },
+      { "lat": 18.8, "lon": -103.5 },
+      { "lat": 20.8, "lon": -101.8 },
+      { "lat": 21.0, "lon": -99.8 }
     ]
   },
   {
@@ -943,9 +1045,19 @@
     "categorie": ["politique", "militaire", "administrative"],
     "source": "https://fr.wikipedia.org/wiki/Empire_inca",
     "territoire": [
-      { "lat": -13.5, "lon": -71.9 },
-      { "lat": -12.0, "lon": -77.0 },
-      { "lat": -16.5, "lon": -68.2 }
+      { "lat": 1.5, "lon": -77.8 },
+      { "lat": -2.0, "lon": -79.5 },
+      { "lat": -8.0, "lon": -78.7 },
+      { "lat": -13.5, "lon": -76.3 },
+      { "lat": -18.0, "lon": -70.3 },
+      { "lat": -27.0, "lon": -70.5 },
+      { "lat": -35.5, "lon": -71.5 },
+      { "lat": -24.0, "lon": -65.2 },
+      { "lat": -19.0, "lon": -65.0 },
+      { "lat": -16.3, "lon": -68.1 },
+      { "lat": -12.0, "lon": -76.9 },
+      { "lat": -4.0, "lon": -79.2 },
+      { "lat": 1.5, "lon": -77.8 }
     ]
   },
   {
@@ -962,9 +1074,14 @@
     "categorie": ["commerciale", "politique", "militaire"],
     "source": "https://fr.wikipedia.org/wiki/Empire_du_Ghana",
     "territoire": [
-      { "lat": 15.3, "lon": -9.6 },
-      { "lat": 13.9, "lon": -4.5 },
-      { "lat": 17.0, "lon": -11.0 }
+      { "lat": 17.8, "lon": -11.5 },
+      { "lat": 16.5, "lon": -8.0 },
+      { "lat": 14.5, "lon": -5.0 },
+      { "lat": 12.5, "lon": -6.5 },
+      { "lat": 12.0, "lon": -9.5 },
+      { "lat": 13.5, "lon": -12.0 },
+      { "lat": 16.0, "lon": -12.5 },
+      { "lat": 17.8, "lon": -11.5 }
     ]
   },
   {
@@ -981,9 +1098,14 @@
     "categorie": ["commerciale", "politique", "religieuse"],
     "source": "https://fr.wikipedia.org/wiki/Empire_du_Mali",
     "territoire": [
-      { "lat": 13.4, "lon": -15.3 },
-      { "lat": 14.5, "lon": -4.0 },
-      { "lat": 12.0, "lon": -9.0 }
+      { "lat": 16.5, "lon": -16.5 },
+      { "lat": 21.0, "lon": -9.5 },
+      { "lat": 18.0, "lon": -3.0 },
+      { "lat": 14.5, "lon": -3.0 },
+      { "lat": 11.5, "lon": -6.5 },
+      { "lat": 10.5, "lon": -11.0 },
+      { "lat": 12.0, "lon": -14.5 },
+      { "lat": 16.5, "lon": -16.5 }
     ]
   },
   {
@@ -1000,9 +1122,15 @@
     "categorie": ["politique", "commerciale", "militaire"],
     "source": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF",
     "territoire": [
-      { "lat": 16.0, "lon": -3.0 },
-      { "lat": 14.8, "lon": -5.2 },
-      { "lat": 17.2, "lon": 0.9 }
+      { "lat": 21.0, "lon": -1.0 },
+      { "lat": 18.5, "lon": 3.0 },
+      { "lat": 15.0, "lon": 5.0 },
+      { "lat": 12.5, "lon": 2.5 },
+      { "lat": 11.5, "lon": -3.5 },
+      { "lat": 13.0, "lon": -8.5 },
+      { "lat": 16.5, "lon": -8.0 },
+      { "lat": 19.5, "lon": -5.5 },
+      { "lat": 21.0, "lon": -1.0 }
     ]
   },
   {
@@ -1019,9 +1147,18 @@
     "categorie": ["politique", "administrative", "culturelle"],
     "source": "https://fr.wikipedia.org/wiki/Histoire_de_la_Chine",
     "territoire": [
-      { "lat": 34.3, "lon": 108.9 },
-      { "lat": 39.9, "lon": 116.4 },
-      { "lat": 31.2, "lon": 121.5 }
+      { "lat": 50.0, "lon": 120.0 },
+      { "lat": 48.0, "lon": 130.0 },
+      { "lat": 40.0, "lon": 124.0 },
+      { "lat": 31.2, "lon": 121.5 },
+      { "lat": 23.0, "lon": 113.5 },
+      { "lat": 22.0, "lon": 108.0 },
+      { "lat": 25.0, "lon": 100.5 },
+      { "lat": 29.5, "lon": 91.0 },
+      { "lat": 36.5, "lon": 76.5 },
+      { "lat": 43.0, "lon": 87.0 },
+      { "lat": 45.0, "lon": 105.0 },
+      { "lat": 50.0, "lon": 120.0 }
     ]
   },
   {
@@ -1038,9 +1175,18 @@
     "categorie": ["politique", "culturelle", "militaire"],
     "source": "https://fr.wikipedia.org/wiki/Histoire_du_Japon",
     "territoire": [
-      { "lat": 35.7, "lon": 139.7 },
-      { "lat": 34.7, "lon": 135.5 },
-      { "lat": 43.1, "lon": 141.3 }
+      { "lat": 45.5, "lon": 141.9 },
+      { "lat": 43.3, "lon": 145.8 },
+      { "lat": 39.5, "lon": 142.0 },
+      { "lat": 35.6, "lon": 140.9 },
+      { "lat": 34.6, "lon": 138.5 },
+      { "lat": 33.5, "lon": 135.9 },
+      { "lat": 31.2, "lon": 130.4 },
+      { "lat": 32.8, "lon": 129.7 },
+      { "lat": 35.5, "lon": 133.0 },
+      { "lat": 37.9, "lon": 138.9 },
+      { "lat": 41.5, "lon": 140.0 },
+      { "lat": 45.5, "lon": 141.9 }
     ]
   },
   {
@@ -1057,9 +1203,15 @@
     "categorie": ["religieuse", "politique", "urbaine"],
     "source": "https://fr.wikipedia.org/wiki/Empire_khmer",
     "territoire": [
-      { "lat": 13.4, "lon": 103.9 },
-      { "lat": 12.8, "lon": 104.0 },
-      { "lat": 14.5, "lon": 102.5 }
+      { "lat": 18.0, "lon": 102.5 },
+      { "lat": 17.0, "lon": 105.0 },
+      { "lat": 14.5, "lon": 108.0 },
+      { "lat": 11.5, "lon": 108.5 },
+      { "lat": 10.3, "lon": 105.2 },
+      { "lat": 11.0, "lon": 102.5 },
+      { "lat": 13.5, "lon": 99.0 },
+      { "lat": 16.0, "lon": 99.5 },
+      { "lat": 18.0, "lon": 102.5 }
     ]
   },
   {
@@ -1076,9 +1228,21 @@
     "categorie": ["politique", "religieuse", "culturelle"],
     "source": "https://fr.wikipedia.org/wiki/Empire_byzantin",
     "territoire": [
-      { "lat": 41.0, "lon": 28.9 },
-      { "lat": 37.9, "lon": 23.7 },
-      { "lat": 33.9, "lon": 35.5 }
+      { "lat": 44.5, "lon": 22.0 },
+      { "lat": 43.0, "lon": 28.5 },
+      { "lat": 41.3, "lon": 29.0 },
+      { "lat": 42.0, "lon": 35.0 },
+      { "lat": 41.0, "lon": 41.5 },
+      { "lat": 37.5, "lon": 40.5 },
+      { "lat": 36.5, "lon": 36.2 },
+      { "lat": 33.8, "lon": 35.3 },
+      { "lat": 36.0, "lon": 30.5 },
+      { "lat": 35.2, "lon": 25.7 },
+      { "lat": 36.4, "lon": 22.8 },
+      { "lat": 38.5, "lon": 20.5 },
+      { "lat": 40.0, "lon": 19.9 },
+      { "lat": 41.5, "lon": 20.0 },
+      { "lat": 44.5, "lon": 22.0 }
     ]
   }
 ]
