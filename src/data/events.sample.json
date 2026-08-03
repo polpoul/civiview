@@ -1244,5 +1244,2005 @@
       { "lat": 41.5, "lon": 20.0 },
       { "lat": 44.5, "lon": 22.0 }
     ]
+  },
+  {
+    "id": "civilisation-koush-meroe",
+    "civilisation": "Royaume de Koush / Méroé",
+    "type": "royaume",
+    "dateDebut": "-1070",
+    "dateFin": "350",
+    "lieu": {
+      "lat": 16.9,
+      "lon": 33.7,
+      "nom": "Méroé"
+    },
+    "evenement": "Indépendance vis-à-vis de l'Égypte et déplacement de la capitale à Méroé",
+    "action": "Gouvernance de l'Égypte (XXVe dynastie), construction de pyramides nubiennes, développement d'une écriture méroïtique distincte.",
+    "etendue": 1200000,
+    "importance": 4,
+    "categorie": [
+      "politique",
+      "culturelle",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Koush"
+  },
+  {
+    "id": "civilisation-swahilie",
+    "civilisation": "Civilisation swahilie",
+    "type": "réseau commercial",
+    "dateDebut": "800",
+    "dateFin": "1500",
+    "lieu": {
+      "lat": -6.8,
+      "lon": 39.3,
+      "nom": "Kilwa Kisiwani"
+    },
+    "evenement": "Essor des cités-États commerçantes",
+    "action": "Réseau de cités-États sur la côte est-africaine, mêlant cultures africaine, arabe, persane et indienne, unifié par la langue swahilie.",
+    "etendue": 350000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "culturelle",
+      "maritime"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Culture_swahilie"
+  },
+  {
+    "id": "civilisation-empires-sahel",
+    "civilisation": "Empires du Sahel (Ghana, Mali, Songhaï)",
+    "type": "empire",
+    "dateDebut": "800",
+    "dateFin": "1591",
+    "lieu": {
+      "lat": 16.8,
+      "lon": -3,
+      "nom": "Tombouctou"
+    },
+    "evenement": "Contrôle des routes de l'or et du sel",
+    "action": "Succession de grands empires ouest-africains, pèlerinage de Mansa Moussa, rayonnement intellectuel de Tombouctou.",
+    "etendue": 1400000,
+    "importance": 5,
+    "categorie": [
+      "commerciale",
+      "politique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+  },
+  {
+    "id": "civilisation-grand-zimbabwe",
+    "civilisation": "Grand Zimbabwe",
+    "type": "royaume",
+    "dateDebut": "1100",
+    "dateFin": "1450",
+    "lieu": {
+      "lat": -20.3,
+      "lon": 30.9,
+      "nom": "Grand Zimbabwe"
+    },
+    "evenement": "Construction de la capitale en pierre",
+    "action": "Capitale d'un vaste royaume commercial grâce à l'or et l'ivoire, architecture monumentale en pierre sans mortier.",
+    "etendue": 50000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "architecturale",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Grand_Zimbabwe"
+  },
+  {
+    "id": "civilisation-mesopotamie",
+    "civilisation": "Mésopotamie (Sumer, Akkad, Babylone, Assyrie)",
+    "type": "fondation",
+    "dateDebut": "-3500",
+    "dateFin": "-539",
+    "lieu": {
+      "lat": 32.5,
+      "lon": 44.4,
+      "nom": "Babylone"
+    },
+    "evenement": "Invention de l'écriture cunéiforme",
+    "action": "Premières cités-États, codes de loi (Hammurabi), développement de l'astronomie et des mathématiques dans le croissant fertile.",
+    "etendue": 400000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "juridique",
+      "scientifique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/M%C3%A9sopotamie"
+  },
+  {
+    "id": "civilisation-indus",
+    "civilisation": "Civilisation de la vallée de l'Indus",
+    "type": "fondation",
+    "dateDebut": "-2600",
+    "dateFin": "-1900",
+    "lieu": {
+      "lat": 27.3,
+      "lon": 68.1,
+      "nom": "Mohenjo-Daro"
+    },
+    "evenement": "Urbanisme planifié avancé",
+    "action": "Cités construites avec systèmes d'égouts sophistiqués, briques standardisées, écriture encore non déchiffrée.",
+    "etendue": 1250000,
+    "importance": 5,
+    "categorie": [
+      "urbaine",
+      "technologique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_de_la_vall%C3%A9e_de_l%27Indus"
+  },
+  {
+    "id": "civilisation-chinoise",
+    "civilisation": "Civilisation chinoise",
+    "type": "civilisation continue",
+    "dateDebut": "-2000",
+    "dateFin": "1911",
+    "lieu": {
+      "lat": 34.3,
+      "lon": 108.9,
+      "nom": "Xi'an / Chang'an"
+    },
+    "evenement": "Dynasties Shang et Zhou, unification Qin",
+    "action": "Continuité remarquable via l'écriture, l'administration mandarinale, le confucianisme, innovations majeures (papier, poudre, imprimerie).",
+    "etendue": 15000000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "technologique",
+      "philosophique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Histoire_de_la_Chine"
+  },
+  {
+    "id": "civilisation-perse-antique",
+    "civilisation": "Perse antique (Achéménides, Sassanides)",
+    "type": "empire",
+    "dateDebut": "-550",
+    "dateFin": "651",
+    "lieu": {
+      "lat": 29.9,
+      "lon": 52.9,
+      "nom": "Persépolis"
+    },
+    "evenement": "Fondation de l'Empire achéménide par Cyrus le Grand",
+    "action": "Premier 'empire-monde', administration en satrapies, route royale, religion zoroastrienne, art du palais.",
+    "etendue": 8000000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "religieuse",
+      "administrative"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_perse"
+  },
+  {
+    "id": "civilisation-phenicie-carthage",
+    "civilisation": "Phénicie / Carthage",
+    "type": "thalassocratie",
+    "dateDebut": "-1500",
+    "dateFin": "-146",
+    "lieu": {
+      "lat": 36.8,
+      "lon": 10.2,
+      "nom": "Carthage"
+    },
+    "evenement": "Expansion commerciale et invention de l'alphabet",
+    "action": "Civilisation maritime et commerçante, fondatrice de comptoirs méditerranéens, à l'origine de l'alphabet.",
+    "etendue": 500000,
+    "importance": 5,
+    "categorie": [
+      "commerciale",
+      "maritime",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_carthaginoise"
+  },
+  {
+    "id": "civilisation-indianisee-asie-sud-est",
+    "civilisation": "Asie du Sud-Est indianisée (Fou-nan, Khmer, Srivijaya)",
+    "type": "royaumes",
+    "dateDebut": "100",
+    "dateFin": "1500",
+    "lieu": {
+      "lat": 13.4,
+      "lon": 103.9,
+      "nom": "Angkor"
+    },
+    "evenement": "Indianisation et construction d'Angkor Wat",
+    "action": "Synthèse des apports indiens (hindouisme, bouddhisme, écriture) avec les cultures locales, construction du plus grand monument religieux du monde.",
+    "etendue": 1200000,
+    "importance": 4,
+    "categorie": [
+      "culturelle",
+      "religieuse",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_khmer"
+  },
+  {
+    "id": "civilisation-japon-classique",
+    "civilisation": "Japon classique et féodal",
+    "type": "civilisation insulaire",
+    "dateDebut": "600",
+    "dateFin": "1868",
+    "lieu": {
+      "lat": 35,
+      "lon": 135.8,
+      "nom": "Kyoto / Heian-kyō"
+    },
+    "evenement": "Époque de Heian et émergence du shogunat",
+    "action": "Civilisation forgée par l'emprunt à la Chine puis une synthèse unique : shogunat, samouraïs, bushido, shintoïsme, raffinement de la cour.",
+    "etendue": 380000,
+    "importance": 4,
+    "categorie": [
+      "politique",
+      "culturelle",
+      "philosophique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Histoire_du_Japon"
+  },
+  {
+    "id": "civilisation-teotihuacan",
+    "civilisation": "Teotihuacán",
+    "type": "cité-empire",
+    "dateDebut": "-100",
+    "dateFin": "650",
+    "lieu": {
+      "lat": 19.7,
+      "lon": -98.8,
+      "nom": "Teotihuacán"
+    },
+    "evenement": "Construction des pyramides du Soleil et de la Lune",
+    "action": "Énorme cité multiethnique à l'urbanisme planifié, influence culturelle et commerciale majeure en Mésoamérique.",
+    "etendue": 20000,
+    "importance": 4,
+    "categorie": [
+      "urbaine",
+      "commerciale",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Teotihuac%C3%A1n"
+  },
+  {
+    "id": "civilisation-azteque",
+    "civilisation": "Empire aztèque / Mexica",
+    "type": "empire",
+    "dateDebut": "1325",
+    "dateFin": "1521",
+    "lieu": {
+      "lat": 19.4,
+      "lon": -99.1,
+      "nom": "Tenochtitlan"
+    },
+    "evenement": "Fondation de Tenochtitlan sur le lac Texcoco",
+    "action": "Dernière grande civilisation mésoaméricaine, capitale lacustre gigantesque, société guerrière et très ritualisée.",
+    "etendue": 500000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "militaire",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Azt%C3%A8ques"
+  },
+  {
+    "id": "civilisation-inca",
+    "civilisation": "Civilisation inca",
+    "type": "empire",
+    "dateDebut": "1200",
+    "dateFin": "1533",
+    "lieu": {
+      "lat": -13.5,
+      "lon": -72,
+      "nom": "Cuzco / Machu Picchu"
+    },
+    "evenement": "Expansion impériale andine",
+    "action": "Empire immense géré sans écriture alphabétique mais avec des quipus, réseau routier monumental, architecture en pierre de taille parfaite.",
+    "etendue": 2000000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "technologique",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_inca"
+  },
+  {
+    "id": "civilisation-aborigene-australie",
+    "civilisation": "Civilisation aborigène d'Australie",
+    "type": "cultures orales",
+    "dateDebut": "-60000",
+    "lieu": {
+      "lat": -25.3,
+      "lon": 131,
+      "nom": "Uluru / Centre de l'Australie"
+    },
+    "evenement": "Peuplement de l'Australie et développement du 'Temps du Rêve'",
+    "action": "Plus ancienne culture continue du monde, gestion du territoire par le feu, spiritualité complexe, art rupestre et lois orales structurant des centaines de nations.",
+    "etendue": 7692000,
+    "importance": 5,
+    "categorie": [
+      "culturelle",
+      "spirituelle",
+      "écologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Aborig%C3%A8nes_d%27Australie"
+  },
+  {
+    "id": "civilisation-polynesienne",
+    "civilisation": "Civilisation polynésienne",
+    "type": "thalassocratie",
+    "dateDebut": "-1500",
+    "dateFin": "1800",
+    "lieu": {
+      "lat": -17.5,
+      "lon": -149.5,
+      "nom": "Tahiti / Triangle polynésien"
+    },
+    "evenement": "Grande expansion maritime vers les îles du Pacifique",
+    "action": "Plus grande expansion maritime de l'histoire avant l'Europe, colonisation d'un triangle Hawaï-Pâques-Nouvelle-Zélande, construction de monuments cérémoniels (marae, moaï).",
+    "etendue": 50000000,
+    "importance": 5,
+    "categorie": [
+      "maritime",
+      "culturelle",
+      "technologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Peuplement_de_l%27Oc%C3%A9anie"
+  },
+  {
+    "id": "civilisation-norte-chico",
+    "civilisation": "Civilisation de Norte Chico / Caral",
+    "type": "fondation",
+    "dateDebut": "-3500",
+    "dateFin": "-1800",
+    "lieu": {
+      "lat": -10.9,
+      "lon": -77.5,
+      "nom": "Caral-Supe"
+    },
+    "evenement": "Émergence de la plus ancienne civilisation andine",
+    "action": "Urbanisme planifié avec pyramides et places circulaires, sans céramique mais avec une organisation sociopolitique complexe, berceau de la civilisation andine.",
+    "etendue": 1800,
+    "importance": 5,
+    "categorie": [
+      "urbaine",
+      "fondation",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Civilisation_de_Caral"
+  },
+  {
+    "id": "civilisation-chavin",
+    "civilisation": "Civilisation de Chavín",
+    "type": "culture religieuse",
+    "dateDebut": "-1200",
+    "dateFin": "-200",
+    "lieu": {
+      "lat": -9.6,
+      "lon": -77.2,
+      "nom": "Chavín de Huántar"
+    },
+    "evenement": "Diffusion du premier grand culte andin",
+    "action": "Centre cérémoniel majeur unifiant les Andes péruviennes par un culte religieux commun, art chamanique iconique (têtes-tenons, Lanzón).",
+    "etendue": 100000,
+    "importance": 4,
+    "categorie": [
+      "religieuse",
+      "artistique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Chav%C3%ADn_(civilisation)"
+  },
+  {
+    "id": "civilisation-nazca",
+    "civilisation": "Civilisation Nazca",
+    "type": "cités-États",
+    "dateDebut": "-200",
+    "dateFin": "600",
+    "lieu": {
+      "lat": -14.7,
+      "lon": -75.1,
+      "nom": "Cahuachi"
+    },
+    "evenement": "Tracé des géoglyphes de Nazca",
+    "action": "Céramique polychrome raffinée, ingénierie hydraulique (aqueducs souterrains/puquios), réalisation des mystérieuses lignes de Nazca visibles du ciel.",
+    "etendue": 15000,
+    "importance": 4,
+    "categorie": [
+      "artistique",
+      "technologique",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Nazca_(civilisation)"
+  },
+  {
+    "id": "civilisation-moche",
+    "civilisation": "Civilisation Moche / Mochica",
+    "type": "cités-États",
+    "dateDebut": "100",
+    "dateFin": "700",
+    "lieu": {
+      "lat": -8.1,
+      "lon": -79,
+      "nom": "Huacas del Sol y de la Luna"
+    },
+    "evenement": "Apogée des seigneuries guerrières de la côte nord",
+    "action": "Pyramides monumentales en adobe, céramique réaliste exceptionnelle documentant tous les aspects de la vie, métallurgie avancée (or, argent, cuivre).",
+    "etendue": 40000,
+    "importance": 4,
+    "categorie": [
+      "artistique",
+      "militaire",
+      "technologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Moche_(culture)"
+  },
+  {
+    "id": "civilisation-huari",
+    "civilisation": "Civilisation Huari / Wari",
+    "type": "empire",
+    "dateDebut": "600",
+    "dateFin": "1100",
+    "lieu": {
+      "lat": -13,
+      "lon": -74.2,
+      "nom": "Huari"
+    },
+    "evenement": "Premier empire andin expansionniste",
+    "action": "Précurseur direct de l'Empire inca avec administration centralisée, réseau routier, terrasses agricoles et imposition d'un style architectural et céramique unifié.",
+    "etendue": 300000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "administrative",
+      "militaire"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Huari"
+  },
+  {
+    "id": "civilisation-tiahuanaco",
+    "civilisation": "Tiahuanaco / Tiwanaku",
+    "type": "cité-État théocratique",
+    "dateDebut": "300",
+    "dateFin": "1150",
+    "lieu": {
+      "lat": -16.6,
+      "lon": -68.7,
+      "nom": "Tiwanaku"
+    },
+    "evenement": "Émergence de la grande cité d'altitude",
+    "action": "Cité monumentale à 3800 m d'altitude près du lac Titicaca, portes sculptées (Porte du Soleil), agriculture en champs surélevés, influence culturelle sur les Andes sud.",
+    "etendue": 100000,
+    "importance": 4,
+    "categorie": [
+      "religieuse",
+      "technologique",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Tiwanaku"
+  },
+  {
+    "id": "civilisation-chimu",
+    "civilisation": "Royaume Chimú / Chimor",
+    "type": "royaume",
+    "dateDebut": "900",
+    "dateFin": "1470",
+    "lieu": {
+      "lat": -8.1,
+      "lon": -79,
+      "nom": "Chan Chan"
+    },
+    "evenement": "Construction de Chan Chan, plus grande cité d'adobe du monde",
+    "action": "Puissant royaume côtier conquis par les Incas, maîtrise de l'irrigation désertique, orfèvrerie somptueuse, organisation en classes sociales rigides.",
+    "etendue": 60000,
+    "importance": 4,
+    "categorie": [
+      "urbaine",
+      "technologique",
+      "artistique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Chim%C3%BA"
+  },
+  {
+    "id": "civilisation-muisca",
+    "civilisation": "Confédération Muisca",
+    "type": "confédération de chefferies",
+    "dateDebut": "600",
+    "dateFin": "1600",
+    "lieu": {
+      "lat": 5.5,
+      "lon": -73.3,
+      "nom": "Haut-plateau de Bogota / Tunja"
+    },
+    "evenement": "Organisation en confédération des hauts plateaux andins",
+    "action": "Maîtrise de l'or (tunjos), légende de l'Eldorado, agriculture avancée sur les altiplanos, commerce du sel, textile et émeraudes.",
+    "etendue": 25000,
+    "importance": 4,
+    "categorie": [
+      "politique",
+      "commerciale",
+      "artistique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Muiscas"
+  },
+  {
+    "id": "civilisation-anasazi",
+    "civilisation": "Civilisation anasazie / Pueblos ancestraux",
+    "type": "culture des pueblos",
+    "dateDebut": "500",
+    "dateFin": "1300",
+    "lieu": {
+      "lat": 37.2,
+      "lon": -109,
+      "nom": "Chaco Canyon / Mesa Verde"
+    },
+    "evenement": "Construction des grands pueblos et habitations troglodytiques",
+    "action": "Bâtisseurs de stupéfiantes cités sous falaises et de complexes semi-urbains (Pueblo Bonito), réseaux routiers cérémoniels, astronomie solaire, kivas.",
+    "etendue": 250000,
+    "importance": 5,
+    "categorie": [
+      "architecturale",
+      "technologique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Anasazis"
+  },
+  {
+    "id": "civilisation-hohokam",
+    "civilisation": "Civilisation Hohokam",
+    "type": "culture du désert",
+    "dateDebut": "300",
+    "dateFin": "1450",
+    "lieu": {
+      "lat": 33.4,
+      "lon": -111.9,
+      "nom": "Vallée du fleuve Salt / Snaketown"
+    },
+    "evenement": "Construction de canaux d'irrigation monumentaux",
+    "action": "Plus grand réseau de canaux d'Amérique du Nord précolombienne, transformation du désert de Sonora en terres agricoles, jeu de balle mésoaméricain, artisanat du coquillage.",
+    "etendue": 40000,
+    "importance": 4,
+    "categorie": [
+      "technologique",
+      "agricole",
+      "commerciale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Hohokam"
+  },
+  {
+    "id": "civilisation-mogollon",
+    "civilisation": "Civilisation Mogollon / Mimbres",
+    "type": "culture des montagnes",
+    "dateDebut": "200",
+    "dateFin": "1450",
+    "lieu": {
+      "lat": 33.2,
+      "lon": -108,
+      "nom": "Vallée de la Gila"
+    },
+    "evenement": "Développement du style céramique Mimbres",
+    "action": "Céramique figurative noire sur blanc mondialement reconnue, maisons semi-souterraines et pueblos de montagne, interactions avec Anasazis et Hohokams.",
+    "etendue": 50000,
+    "importance": 3,
+    "categorie": [
+      "artistique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Mogollon_(culture)"
+  },
+  {
+    "id": "civilisation-cahokia",
+    "civilisation": "Culture mississippienne / Cahokia",
+    "type": "chefferie urbaine",
+    "dateDebut": "800",
+    "dateFin": "1600",
+    "lieu": {
+      "lat": 38.6,
+      "lon": -90.2,
+      "nom": "Cahokia"
+    },
+    "evenement": "Construction de la plus grande cité au nord du Mexique",
+    "action": "Pyramides de terre (Monks Mound), place centrale, astronomie (Woodhenge), vaste réseau commercial couvrant l'Est des actuels États-Unis.",
+    "etendue": 500000,
+    "importance": 5,
+    "categorie": [
+      "urbaine",
+      "commerciale",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Cahokia"
+  },
+  {
+    "id": "civilisation-zapoteque",
+    "civilisation": "Civilisation zapotèque",
+    "type": "cité-État",
+    "dateDebut": "-500",
+    "dateFin": "1521",
+    "lieu": {
+      "lat": 17,
+      "lon": -96.7,
+      "nom": "Monte Albán"
+    },
+    "evenement": "Fondation de Monte Albán",
+    "action": "Une des premières cités de Mésoamérique, écriture hiéroglyphique ancienne, calendrier rituel, tombes richement décorées.",
+    "etendue": 40000,
+    "importance": 4,
+    "categorie": [
+      "urbaine",
+      "culturelle",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Zapot%C3%A8ques"
+  },
+  {
+    "id": "civilisation-mixteque",
+    "civilisation": "Civilisation mixtèque",
+    "type": "royaumes",
+    "dateDebut": "900",
+    "dateFin": "1521",
+    "lieu": {
+      "lat": 17.5,
+      "lon": -97.5,
+      "nom": "Tilantongo / Mitla"
+    },
+    "evenement": "Âge d'or des codex et de l'orfèvrerie",
+    "action": "Maîtres artisans de l'or et de la turquoise, célèbres codex pictographiques racontant leurs dynasties, résistance farouche aux Aztèques.",
+    "etendue": 35000,
+    "importance": 4,
+    "categorie": [
+      "artistique",
+      "culturelle",
+      "militaire"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Mixt%C3%A8ques"
+  },
+  {
+    "id": "civilisation-tolteque",
+    "civilisation": "Civilisation toltèque",
+    "type": "empire",
+    "dateDebut": "900",
+    "dateFin": "1200",
+    "lieu": {
+      "lat": 20.4,
+      "lon": -99.3,
+      "nom": "Tula"
+    },
+    "evenement": "Fondation de la cité de Tula et expansion militaire",
+    "action": "Guerriers mythifiés par les Aztèques, colonnes de guerriers atlantes, culte de Quetzalcóatl, influence sur le Yucatán maya (Chichén Itzá).",
+    "etendue": 150000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "culturelle",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Tolt%C3%A8ques"
+  },
+  {
+    "id": "civilisation-purepecha",
+    "civilisation": "Empire purépecha / Tarasque",
+    "type": "empire",
+    "dateDebut": "1300",
+    "dateFin": "1530",
+    "lieu": {
+      "lat": 19.5,
+      "lon": -101.6,
+      "nom": "Tzintzuntzan"
+    },
+    "evenement": "Unification du Michoacán et résistance aztèque",
+    "action": "Seul État à avoir repoussé militairement les Aztèques de façon permanente, métallurgie du cuivre et du bronze la plus avancée de Mésoamérique.",
+    "etendue": 75000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "technologique",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Pur%C3%A9pechas"
+  },
+  {
+    "id": "civilisation-totonaca",
+    "civilisation": "Civilisation totonaque",
+    "type": "cités-États",
+    "dateDebut": "600",
+    "dateFin": "1521",
+    "lieu": {
+      "lat": 20.3,
+      "lon": -97.3,
+      "nom": "El Tajín / Cempoala"
+    },
+    "evenement": "Construction de la pyramide aux 365 niches",
+    "action": "Inventeurs possibles du jeu de balle volador, alliés clés de Cortés contre les Aztèques, cultivateurs de vanille.",
+    "etendue": 20000,
+    "importance": 3,
+    "categorie": [
+      "culturelle",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Totonaques"
+  },
+  {
+    "id": "civilisation-caribe-taino",
+    "civilisation": "Peuples Taïnos des Caraïbes",
+    "type": "chefferies insulaires",
+    "dateDebut": "600",
+    "dateFin": "1550",
+    "lieu": {
+      "lat": 19,
+      "lon": -70.6,
+      "nom": "Hispaniola / Borikén"
+    },
+    "evenement": "Développement des sociétés complexes des Grandes Antilles",
+    "action": "Navigation inter-îles, chefferies (caciquats) hiérarchisées, terrains de jeu de balle (batey), agriculture du manioc, objets rituels en bois et pierre.",
+    "etendue": 200000,
+    "importance": 4,
+    "categorie": [
+      "maritime",
+      "politique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Ta%C3%AFnos"
+  },
+  {
+    "id": "civilisation-amazonie-marajoara",
+    "civilisation": "Culture Marajoara",
+    "type": "chefferies amazoniennes",
+    "dateDebut": "400",
+    "dateFin": "1400",
+    "lieu": {
+      "lat": -0.9,
+      "lon": -49.5,
+      "nom": "Île de Marajó"
+    },
+    "evenement": "Émergence des sociétés complexes du bas Amazone",
+    "action": "Tertres artificiels pour villages, céramique sophistiquée peinte et modelée, grandes chefferies sur l'estuaire de l'Amazone.",
+    "etendue": 40000,
+    "importance": 4,
+    "categorie": [
+      "urbaine",
+      "artistique",
+      "technologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Culture_Marajoara"
+  },
+  {
+    "id": "civilisation-amazonie-terra-preta",
+    "civilisation": "Civilisations de la terre noire / Amazonie précolombienne",
+    "type": "réseau urbain",
+    "dateDebut": "-500",
+    "dateFin": "1600",
+    "lieu": {
+      "lat": -3.5,
+      "lon": -55,
+      "nom": "Kuhikugu / Haute-Amazonie"
+    },
+    "evenement": "Découverte récente de vastes cités-jardins",
+    "action": "Création de la terra preta, sol anthropique hyper-fertile, vastes agglomérations reliées par des routes, transformation durable de la forêt amazonienne.",
+    "etendue": 2000000,
+    "importance": 5,
+    "categorie": [
+      "technologique",
+      "urbaine",
+      "écologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Terra_preta"
+  },
+  {
+    "id": "civilisation-nok",
+    "civilisation": "Culture Nok",
+    "type": "culture archéologique",
+    "dateDebut": "-1500",
+    "dateFin": "-200",
+    "lieu": {
+      "lat": 9.5,
+      "lon": 8,
+      "nom": "Plateau de Jos, Nigeria"
+    },
+    "evenement": "Première fonte du fer en Afrique de l'Ouest",
+    "action": "Célèbres têtes en terre cuite d'un réalisme saisissant, transition précoce vers la métallurgie du fer, fondement des cultures ouest-africaines ultérieures.",
+    "etendue": 50000,
+    "importance": 5,
+    "categorie": [
+      "artistique",
+      "technologique",
+      "fondation"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Nok_(civilisation)"
+  },
+  {
+    "id": "civilisation-ife",
+    "civilisation": "Royaume d'Ifé",
+    "type": "cité-État sacrée",
+    "dateDebut": "800",
+    "dateFin": "1500",
+    "lieu": {
+      "lat": 7.5,
+      "lon": 4.5,
+      "nom": "Ifé"
+    },
+    "evenement": "Apogée du berceau spirituel Yoruba",
+    "action": "Têtes en bronze et en laiton d'une maîtrise technique exceptionnelle, cœur religieux et politique des Yorubas, urbanisme sacré avec cours royales.",
+    "etendue": 15000,
+    "importance": 5,
+    "categorie": [
+      "artistique",
+      "religieuse",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/If%E1%BA%B9"
+  },
+  {
+    "id": "civilisation-benin",
+    "civilisation": "Royaume du Bénin",
+    "type": "empire",
+    "dateDebut": "1180",
+    "dateFin": "1897",
+    "lieu": {
+      "lat": 6.3,
+      "lon": 5.6,
+      "nom": "Benin City"
+    },
+    "evenement": "Construction de la capitale fortifiée et des palais royaux",
+    "action": "Plaques de bronze d'une finesse inégalée documentant la vie de cour, remparts monumentaux parmi les plus grands ouvrages de terre du monde, administration centralisée.",
+    "etendue": 90000,
+    "importance": 5,
+    "categorie": [
+      "artistique",
+      "architecturale",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_du_B%C3%A9nin"
+  },
+  {
+    "id": "civilisation-igbo-ukwu",
+    "civilisation": "Civilisation d'Igbo-Ukwu",
+    "type": "royaume",
+    "dateDebut": "800",
+    "dateFin": "1000",
+    "lieu": {
+      "lat": 6,
+      "lon": 7,
+      "nom": "Igbo-Ukwu"
+    },
+    "evenement": "Découverte archéologique d'un trésor royal",
+    "action": "Bronzes à la technique de cire perdue parmi les plus sophistiqués au monde, tombe royale d'une richesse stupéfiante, commerce longue distance attesté par des perles indiennes.",
+    "etendue": 5000,
+    "importance": 4,
+    "categorie": [
+      "artistique",
+      "commerciale",
+      "technologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Igbo-Ukwu"
+  },
+  {
+    "id": "civilisation-ashanti",
+    "civilisation": "Empire Ashanti / Asante",
+    "type": "empire",
+    "dateDebut": "1670",
+    "dateFin": "1902",
+    "lieu": {
+      "lat": 6.7,
+      "lon": -1.6,
+      "nom": "Kumasi"
+    },
+    "evenement": "Unification sous le Trône d'Or (Sika Dwa)",
+    "action": "Puissant État militaire et commerçant, symboles royaux en or somptueux, résistance acharnée à la colonisation britannique, kodjès (poids à peser l'or) artistiques.",
+    "etendue": 250000,
+    "importance": 5,
+    "categorie": [
+      "militaire",
+      "artistique",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_ashanti"
+  },
+  {
+    "id": "civilisation-dahomey",
+    "civilisation": "Royaume de Dahomey",
+    "type": "royaume",
+    "dateDebut": "1600",
+    "dateFin": "1900",
+    "lieu": {
+      "lat": 7.2,
+      "lon": 2.1,
+      "nom": "Abomey"
+    },
+    "evenement": "Création du corps des Amazones du Dahomey",
+    "action": "Palais royaux décorés de bas-reliefs narratifs, unique régiment féminin d'élite en Afrique (les Agojie), État guerrier et centralisé.",
+    "etendue": 100000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "politique",
+      "artistique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Dahomey"
+  },
+  {
+    "id": "civilisation-oyo",
+    "civilisation": "Empire d'Oyó",
+    "type": "empire",
+    "dateDebut": "1400",
+    "dateFin": "1835",
+    "lieu": {
+      "lat": 8,
+      "lon": 4,
+      "nom": "Oyó-Ile"
+    },
+    "evenement": "Expansion de la cavalerie yoruba",
+    "action": "Empire yoruba bâti sur une cavalerie puissante et le commerce d'esclaves, administration complexe avec conseil de notables (Oyo Mesi), influence sur tout le golfe du Bénin.",
+    "etendue": 150000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "commerciale",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Oyo_(Nigeria)"
+  },
+  {
+    "id": "civilisation-berbere",
+    "civilisation": "Civilisation berbère (Amazigh)",
+    "type": "civilisation transsaharienne",
+    "dateDebut": "-3000",
+    "lieu": {
+      "lat": 31,
+      "lon": -7,
+      "nom": "Marrakech / Massif de l'Atlas"
+    },
+    "evenement": "Émergence des royaumes maures et dynasties berbères",
+    "action": "Médiateurs essentiels du commerce transsaharien, dynasties islamiques majeures (Almoravides, Almohades) unifiant Afrique du Nord et Espagne, écriture tifinagh, architecture en pisé.",
+    "etendue": 3500000,
+    "importance": 5,
+    "categorie": [
+      "commerciale",
+      "politique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Berb%C3%A8res"
+  },
+  {
+    "id": "civilisation-garamantes",
+    "civilisation": "Civilisation des Garamantes",
+    "type": "royaume saharien",
+    "dateDebut": "-500",
+    "dateFin": "700",
+    "lieu": {
+      "lat": 26,
+      "lon": 13,
+      "nom": "Germa / Fezzan"
+    },
+    "evenement": "Maîtrise de l'eau fossile par les foggaras",
+    "action": "Royaume saharien prospère grâce à un réseau de galeries drainantes souterraines, chars de guerre, commerce transsaharien pionnier.",
+    "etendue": 300000,
+    "importance": 4,
+    "categorie": [
+      "technologique",
+      "commerciale",
+      "militaire"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Garamantes"
+  },
+  {
+    "id": "civilisation-hausa",
+    "civilisation": "Cités-États Haoussa",
+    "type": "réseau urbain",
+    "dateDebut": "1000",
+    "dateFin": "1804",
+    "lieu": {
+      "lat": 12,
+      "lon": 8.5,
+      "nom": "Kano / Katsina"
+    },
+    "evenement": "Essor commercial et islamisation des cités",
+    "action": "Sept cités-États marchandes au carrefour du Sahel, industrie textile du coton et du cuir réputée, murs d'enceinte monumentaux, centres d'études islamiques.",
+    "etendue": 200000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "urbaine",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Haoussas"
+  },
+  {
+    "id": "civilisation-kanem-bornu",
+    "civilisation": "Empire du Kanem-Bornou",
+    "type": "empire",
+    "dateDebut": "800",
+    "dateFin": "1893",
+    "lieu": {
+      "lat": 13,
+      "lon": 13,
+      "nom": "Njimi / Ngazargamu"
+    },
+    "evenement": "Expansion autour du lac Tchad",
+    "action": "Un des plus durables empires africains (plus d'un millénaire), contrôle du commerce transsaharien central, cavalerie lourde en armure, diplomatie avec le monde musulman.",
+    "etendue": 1800000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "commerciale",
+      "militaire"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Kanem-Bornou"
+  },
+  {
+    "id": "civilisation-monomotapa",
+    "civilisation": "Empire du Monomotapa / Mutapa",
+    "type": "empire",
+    "dateDebut": "1430",
+    "dateFin": "1760",
+    "lieu": {
+      "lat": -17.5,
+      "lon": 31,
+      "nom": "Zvongombe"
+    },
+    "evenement": "Successeur méridional du Grand Zimbabwe",
+    "action": "Héritier du Grand Zimbabwe, contrôle des mines d'or du plateau, commerce avec les Portugais via Sofala, résistance aux tentatives de domination coloniale.",
+    "etendue": 700000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "minière",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_du_Monomotapa"
+  },
+  {
+    "id": "civilisation-kongo",
+    "civilisation": "Royaume du Kongo",
+    "type": "royaume",
+    "dateDebut": "1390",
+    "dateFin": "1914",
+    "lieu": {
+      "lat": -6,
+      "lon": 14.5,
+      "nom": "Mbanza-Kongo"
+    },
+    "evenement": "Conversion au christianisme et relations avec le Portugal",
+    "action": "Royaume centralisé avec administration provinciale, diplomatie complexe avec les Européens, sculpture religieuse chrétienne syncrétique (crucifix Kongo), marché de fer et de raphia.",
+    "etendue": 300000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "diplomatique",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_du_Kongo"
+  },
+  {
+    "id": "civilisation-luba",
+    "civilisation": "Empire Luba",
+    "type": "empire",
+    "dateDebut": "1585",
+    "dateFin": "1889",
+    "lieu": {
+      "lat": -7,
+      "lon": 26,
+      "nom": "Kabambare / Katanga"
+    },
+    "evenement": "Fondation de l'empire sacré Luba",
+    "action": "Structure politique sophistiquée basée sur la royauté sacrée (balopwe), art royal (sièges à cariatides, porte-flèches), expansion via un système de vassalité plutôt que de conquête.",
+    "etendue": 300000,
+    "importance": 4,
+    "categorie": [
+      "politique",
+      "artistique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_Luba"
+  },
+  {
+    "id": "civilisation-lunda",
+    "civilisation": "Empire Lunda",
+    "type": "empire",
+    "dateDebut": "1600",
+    "dateFin": "1887",
+    "lieu": {
+      "lat": -9,
+      "lon": 22,
+      "nom": "Musumba / Katanga"
+    },
+    "evenement": "Expansion du modèle politique Luba modifié",
+    "action": "Réseau impérial souple couvrant Congo, Angola et Zambie, commerce de l'ivoire, du cuivre et des esclaves, titres de noblesse transmissibles assurant la cohésion.",
+    "etendue": 600000,
+    "importance": 4,
+    "categorie": [
+      "politique",
+      "commerciale",
+      "expansion"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_Lunda"
+  },
+  {
+    "id": "civilisation-buganda",
+    "civilisation": "Royaume du Buganda",
+    "type": "royaume",
+    "dateDebut": "1300",
+    "dateFin": "1967",
+    "lieu": {
+      "lat": 0.3,
+      "lon": 32.6,
+      "nom": "Kampala / Mengo"
+    },
+    "evenement": "Unification et centralisation autour du Kabaka",
+    "action": "Monarchie centralisée des Grands Lacs, flotte de guerre sur le lac Victoria, administration très structurée avec chefs nommés, art du tambour royal, résistance aux visées coloniales.",
+    "etendue": 40000,
+    "importance": 4,
+    "categorie": [
+      "politique",
+      "militaire",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Buganda"
+  },
+  {
+    "id": "civilisation-nyiginya",
+    "civilisation": "Royaume du Rwanda (Nyiginya)",
+    "type": "royaume",
+    "dateDebut": "1400",
+    "dateFin": "1961",
+    "lieu": {
+      "lat": -1.9,
+      "lon": 30,
+      "nom": "Nyanza"
+    },
+    "evenement": "Expansion du royaume tutsi sur les collines rwandaises",
+    "action": "Centralisation politique remarquable, poésie dynastique (ibisigo), rituels royaux ésotériques (ubwiru), armée permanente, clientélisme pastoral.",
+    "etendue": 26000,
+    "importance": 4,
+    "categorie": [
+      "politique",
+      "militaire",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Histoire_du_Rwanda"
+  },
+  {
+    "id": "civilisation-zoulou",
+    "civilisation": "Royaume Zoulou",
+    "type": "empire",
+    "dateDebut": "1816",
+    "dateFin": "1897",
+    "lieu": {
+      "lat": -28.5,
+      "lon": 31,
+      "nom": "Ulundi"
+    },
+    "evenement": "Soulèvement et réformes militaires de Chaka",
+    "action": "Révolution tactique avec la formation en cornes de buffle, régiments d'élite (impi), unification de nombreux clans sous un État guerrier centralisé, résistance légendaire aux Britanniques.",
+    "etendue": 30000,
+    "importance": 5,
+    "categorie": [
+      "militaire",
+      "politique",
+      "expansion"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_zoulou"
+  },
+  {
+    "id": "civilisation-madagascar",
+    "civilisation": "Royaumes de Madagascar (Merina, Sakalava)",
+    "type": "royaumes",
+    "dateDebut": "1500",
+    "dateFin": "1897",
+    "lieu": {
+      "lat": -18.9,
+      "lon": 47.5,
+      "nom": "Antananarivo"
+    },
+    "evenement": "Unification de l'île par le royaume Merina",
+    "action": "Fusion culturelle austronésienne et africaine unique, construction de tombeaux monumentaux, agriculture en terrasses rizicoles, tentative de modernisation face aux puissances coloniales.",
+    "etendue": 587000,
+    "importance": 4,
+    "categorie": [
+      "culturelle",
+      "politique",
+      "maritime"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Madagascar"
+  },
+  {
+    "id": "civilisation-damot",
+    "civilisation": "Royaume de Damot",
+    "type": "royaume",
+    "dateDebut": "-1000",
+    "dateFin": "-500",
+    "lieu": {
+      "lat": 8,
+      "lon": 37.5,
+      "nom": "Sud-ouest éthiopien"
+    },
+    "evenement": "Premier royaume connu de la Corne de l'Afrique",
+    "action": "Précurseur d'Axoum, organisation politique complexe précoce en Éthiopie, construction de monuments mégalithiques, contrôle du commerce de l'encens et de la myrrhe.",
+    "etendue": 40000,
+    "importance": 3,
+    "categorie": [
+      "fondation",
+      "commerciale",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Damot"
+  },
+  {
+    "id": "civilisation-zagwe",
+    "civilisation": "Dynastie Zagwé",
+    "type": "dynastie",
+    "dateDebut": "900",
+    "dateFin": "1270",
+    "lieu": {
+      "lat": 12,
+      "lon": 39,
+      "nom": "Lalibela"
+    },
+    "evenement": "Construction des églises monolithes de Lalibela",
+    "action": "Églises creusées dans la roche d'une prouesse architecturale inouïe, continuation du christianisme éthiopien, pont culturel entre Axoum et l'empire salomonien.",
+    "etendue": 150000,
+    "importance": 5,
+    "categorie": [
+      "architecturale",
+      "religieuse",
+      "artistique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Dynastie_Zagw%C3%A9"
+  },
+  {
+    "id": "civilisation-hittite",
+    "civilisation": "Empire hittite",
+    "type": "empire",
+    "dateDebut": "-1650",
+    "dateFin": "-1178",
+    "lieu": {
+      "lat": 40,
+      "lon": 34.6,
+      "nom": "Hattusa"
+    },
+    "evenement": "Unification de l'Anatolie et rivalité avec l'Égypte",
+    "action": "Premier empire anatolien, maîtrise du fer et des chars de guerre, traité de paix avec Ramsès II (premier traité connu), langue indo-européenne ancienne.",
+    "etendue": 500000,
+    "importance": 5,
+    "categorie": [
+      "militaire",
+      "diplomatique",
+      "technologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Hittites"
+  },
+  {
+    "id": "civilisation-ourartou",
+    "civilisation": "Royaume d'Ourartou",
+    "type": "royaume",
+    "dateDebut": "-860",
+    "dateFin": "-590",
+    "lieu": {
+      "lat": 38.5,
+      "lon": 43.3,
+      "nom": "Tushpa / Van"
+    },
+    "evenement": "Rival montagnard de l'Assyrie",
+    "action": "Forteresses cyclopéennes autour du lac de Van, maîtrise de l'irrigation en haute altitude, métallurgie du bronze avancée, rival tenace de l'Empire assyrien.",
+    "etendue": 200000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "technologique",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Ourartou"
+  },
+  {
+    "id": "civilisation-lydienne",
+    "civilisation": "Royaume de Lydie",
+    "type": "royaume",
+    "dateDebut": "-1200",
+    "dateFin": "-546",
+    "lieu": {
+      "lat": 38.5,
+      "lon": 28,
+      "nom": "Sardes"
+    },
+    "evenement": "Invention de la monnaie frappée",
+    "action": "Premières pièces de monnaie en électrum, pont commercial entre monde grec et perse, légendaire roi Crésus, capitale raffinée au cœur de l'Anatolie.",
+    "etendue": 50000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "technologique",
+      "économique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Lydie"
+  },
+  {
+    "id": "civilisation-elam",
+    "civilisation": "Civilisation élamite",
+    "type": "civilisation",
+    "dateDebut": "-2700",
+    "dateFin": "-539",
+    "lieu": {
+      "lat": 32.2,
+      "lon": 48.3,
+      "nom": "Suse"
+    },
+    "evenement": "Rival et partenaire de la Mésopotamie",
+    "action": "Cité de Suse, carrefour entre monde iranien et mésopotamien, écriture proto-élamite, ziggourat de Tchogha Zanbil, influence sur la formation de la Perse.",
+    "etendue": 300000,
+    "importance": 5,
+    "categorie": [
+      "culturelle",
+      "politique",
+      "fondation"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/%C3%89lam"
+  },
+  {
+    "id": "civilisation-mittani",
+    "civilisation": "Royaume du Mittani",
+    "type": "empire",
+    "dateDebut": "-1500",
+    "dateFin": "-1300",
+    "lieu": {
+      "lat": 37,
+      "lon": 41,
+      "nom": "Washshukanni"
+    },
+    "evenement": "Puissance hourrite dominant le nord mésopotamien",
+    "action": "Maîtrise de l'élevage et du dressage des chevaux de char, élite guerrière maryannu, diplomatie active avec l'Égypte (lettres d'Amarna).",
+    "etendue": 250000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "diplomatique",
+      "technologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Mittani"
+  },
+  {
+    "id": "civilisation-sabeens",
+    "civilisation": "Royaume de Saba",
+    "type": "royaume",
+    "dateDebut": "-1200",
+    "dateFin": "275",
+    "lieu": {
+      "lat": 15.4,
+      "lon": 45.3,
+      "nom": "Marib"
+    },
+    "evenement": "Construction du barrage de Marib et contrôle de la route de l'encens",
+    "action": "Reine de Saba légendaire, barrage monumental permettant une oasis florissante, écriture sud-arabique, commerce des aromates avec la Méditerranée.",
+    "etendue": 200000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "technologique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Saba"
+  },
+  {
+    "id": "civilisation-himyar",
+    "civilisation": "Royaume d'Himyar",
+    "type": "royaume",
+    "dateDebut": "-110",
+    "dateFin": "525",
+    "lieu": {
+      "lat": 14.5,
+      "lon": 44,
+      "nom": "Zafar"
+    },
+    "evenement": "Unification de l'Arabie heureuse et conversion au judaïsme",
+    "action": "Successeur de Saba, royaume converti au judaïsme, contrôle maritime et terrestre des routes de l'encens, conflits avec Axoum et Byzance.",
+    "etendue": 350000,
+    "importance": 3,
+    "categorie": [
+      "religieuse",
+      "commerciale",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Himyar"
+  },
+  {
+    "id": "civilisation-nabateens",
+    "civilisation": "Royaume nabatéen",
+    "type": "royaume",
+    "dateDebut": "-400",
+    "dateFin": "106",
+    "lieu": {
+      "lat": 30.3,
+      "lon": 35.4,
+      "nom": "Pétra"
+    },
+    "evenement": "Taille de la cité de Pétra dans le grès",
+    "action": "Architecture troglodytique spectaculaire, maîtrise de l'hydraulique désertique, carrefour commercial des caravanes d'encens et d'épices, écriture pré-arabe.",
+    "etendue": 200000,
+    "importance": 5,
+    "categorie": [
+      "architecturale",
+      "commerciale",
+      "technologique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Nabat%C3%A9ens"
+  },
+  {
+    "id": "civilisation-palmyre",
+    "civilisation": "Royaume de Palmyre",
+    "type": "cité-empire",
+    "dateDebut": "-100",
+    "dateFin": "273",
+    "lieu": {
+      "lat": 34.5,
+      "lon": 38.3,
+      "nom": "Palmyre / Tadmor"
+    },
+    "evenement": "Éphémère empire sous la reine Zénobie",
+    "action": "Cité caravanière entre Rome et les Parthes, art syncrétique gréco-oriental, révolte contre Rome créant un empire oriental éphémère.",
+    "etendue": 1200000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "politique",
+      "artistique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Palmyre"
+  },
+  {
+    "id": "civilisation-armenie-antique",
+    "civilisation": "Royaume d'Arménie antique",
+    "type": "royaume",
+    "dateDebut": "-331",
+    "dateFin": "428",
+    "lieu": {
+      "lat": 39.8,
+      "lon": 44.5,
+      "nom": "Artaxata / Tigranocerte"
+    },
+    "evenement": "Apogée sous Tigrane le Grand",
+    "action": "Premier État chrétien officiel en 301, alphabet arménien par Mesrop Machtots, empire éphémère sous Tigrane II, pont entre mondes romain et parthe.",
+    "etendue": 1000000,
+    "importance": 4,
+    "categorie": [
+      "religieuse",
+      "culturelle",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_d%27Arm%C3%A9nie"
+  },
+  {
+    "id": "civilisation-kouchan",
+    "civilisation": "Empire Kouchan",
+    "type": "empire",
+    "dateDebut": "30",
+    "dateFin": "375",
+    "lieu": {
+      "lat": 34.5,
+      "lon": 69,
+      "nom": "Kaboul / Peshawar"
+    },
+    "evenement": "Apogée du bouddhisme gréco-indien",
+    "action": "Carrefour de la Route de la Soie, syncrétisme culturel unique, premières représentations humaines du Bouddha (art gréco-bouddhique du Gandhara), tolérance religieuse.",
+    "etendue": 3800000,
+    "importance": 5,
+    "categorie": [
+      "culturelle",
+      "religieuse",
+      "commerciale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_kouchan"
+  },
+  {
+    "id": "civilisation-gupta",
+    "civilisation": "Empire Gupta",
+    "type": "empire",
+    "dateDebut": "320",
+    "dateFin": "550",
+    "lieu": {
+      "lat": 25,
+      "lon": 85,
+      "nom": "Pataliputra"
+    },
+    "evenement": "Âge d'or classique de l'Inde",
+    "action": "Floraison des sciences (zéro, astronomie d'Aryabhata), littérature sanskrite (Kâlidâsa), art raffiné d'Ajantâ, administration décentralisée efficace.",
+    "etendue": 3500000,
+    "importance": 5,
+    "categorie": [
+      "scientifique",
+      "artistique",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_Gupta"
+  },
+  {
+    "id": "civilisation-chola",
+    "civilisation": "Dynastie Chola",
+    "type": "thalassocratie",
+    "dateDebut": "-300",
+    "dateFin": "1279",
+    "lieu": {
+      "lat": 10.9,
+      "lon": 79.1,
+      "nom": "Tanjavûr"
+    },
+    "evenement": "Expansion maritime vers l'Asie du Sud-Est",
+    "action": "Temples dravidiens monumentaux (Brihadesvara), flotte dominante dans l'océan Indien, expéditions jusqu'à Sumatra (Srivijaya), administration locale avancée.",
+    "etendue": 1500000,
+    "importance": 5,
+    "categorie": [
+      "maritime",
+      "architecturale",
+      "commerciale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Chola"
+  },
+  {
+    "id": "civilisation-vijayanagara",
+    "civilisation": "Empire de Vijayanagara",
+    "type": "empire",
+    "dateDebut": "1336",
+    "dateFin": "1646",
+    "lieu": {
+      "lat": 15.3,
+      "lon": 76.4,
+      "nom": "Hampi"
+    },
+    "evenement": "Rempart hindou face à l'expansion musulmane",
+    "action": "Capitale gigantesque de Hampi, une des plus grandes villes du monde médiéval, mécénat artistique et religieux, commerce international avec Portugais et Arabes.",
+    "etendue": 360000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "religieuse",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Vijayanagara"
+  },
+  {
+    "id": "civilisation-moghol",
+    "civilisation": "Empire moghol",
+    "type": "empire",
+    "dateDebut": "1526",
+    "dateFin": "1857",
+    "lieu": {
+      "lat": 28.6,
+      "lon": 77.2,
+      "nom": "Delhi / Agra"
+    },
+    "evenement": "Fondation par Bâbur et âge d'or sous Akbar",
+    "action": "Synthèse indo-islamique, Taj Mahal, art de la miniature, réformes administratives et religieuses d'Akbar, une des économies les plus riches du monde moderne.",
+    "etendue": 4000000,
+    "importance": 5,
+    "categorie": [
+      "artistique",
+      "politique",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_moghol"
+  },
+  {
+    "id": "civilisation-maratha",
+    "civilisation": "Empire marathe",
+    "type": "confédération",
+    "dateDebut": "1674",
+    "dateFin": "1818",
+    "lieu": {
+      "lat": 18.5,
+      "lon": 73.8,
+      "nom": "Pune / Raigad"
+    },
+    "evenement": "Soulèvement hindou face aux Moghols sous Shivaji",
+    "action": "État guerrier décentralisé, guérilla de harcèlement redoutable, renaissance hindoue face à l'hégémonie moghole, marine de guerre sur la côte ouest indienne.",
+    "etendue": 2800000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "politique",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_marathe"
+  },
+  {
+    "id": "civilisation-sri-lanka",
+    "civilisation": "Royaumes cinghalais (Anuradhapura, Polonnaruwa)",
+    "type": "royaumes",
+    "dateDebut": "-377",
+    "dateFin": "1505",
+    "lieu": {
+      "lat": 8.3,
+      "lon": 80.4,
+      "nom": "Anuradhapura"
+    },
+    "evenement": "Introduction du bouddhisme Theravada",
+    "action": "Stupas monumentaux (Jetavanarama, un des plus hauts monuments antiques), réservoirs et canaux d'irrigation sophistiqués, foyer du bouddhisme theravada.",
+    "etendue": 65000,
+    "importance": 4,
+    "categorie": [
+      "religieuse",
+      "technologique",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_d%27Anuradhapura"
+  },
+  {
+    "id": "civilisation-pyu",
+    "civilisation": "Cités-États Pyu",
+    "type": "réseau urbain",
+    "dateDebut": "-200",
+    "dateFin": "900",
+    "lieu": {
+      "lat": 22,
+      "lon": 96,
+      "nom": "Sri Ksetra"
+    },
+    "evenement": "Premières cités de Birmanie et adoption du bouddhisme",
+    "action": "Urbanisme circulaire planifié, sépultures à urnes, adoption précoce du bouddhisme theravada, commerce avec l'Inde et la Chine.",
+    "etendue": 80000,
+    "importance": 4,
+    "categorie": [
+      "urbaine",
+      "religieuse",
+      "commerciale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Pyu"
+  },
+  {
+    "id": "civilisation-pagan",
+    "civilisation": "Royaume de Pagan",
+    "type": "empire",
+    "dateDebut": "849",
+    "dateFin": "1297",
+    "lieu": {
+      "lat": 21.1,
+      "lon": 94.8,
+      "nom": "Bagan"
+    },
+    "evenement": "Unification de la Birmanie et âge d'or architectural",
+    "action": "Plaine de Bagan avec plus de 2000 temples et stupas, synthèse du bouddhisme theravada et des croyances locales, premier empire birman unifié.",
+    "etendue": 450000,
+    "importance": 5,
+    "categorie": [
+      "architecturale",
+      "religieuse",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Pagan"
+  },
+  {
+    "id": "civilisation-dai-viet",
+    "civilisation": "Đại Việt (Vietnam ancien)",
+    "type": "royaume",
+    "dateDebut": "938",
+    "dateFin": "1804",
+    "lieu": {
+      "lat": 21,
+      "lon": 105.8,
+      "nom": "Thăng Long / Hanoï"
+    },
+    "evenement": "Indépendance après la défaite des Tang et résistance aux Mongols",
+    "action": "Résistance victorieuse contre trois invasions mongoles, forte identité nationale face à la Chine, développement d'une écriture démotique (chữ nôm), expansion vers le sud (Nam tiến).",
+    "etendue": 330000,
+    "importance": 5,
+    "categorie": [
+      "militaire",
+      "culturelle",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/%C4%90%E1%BA%A1i_Vi%E1%BB%87t"
+  },
+  {
+    "id": "civilisation-tibet",
+    "civilisation": "Empire du Tibet",
+    "type": "empire",
+    "dateDebut": "618",
+    "dateFin": "842",
+    "lieu": {
+      "lat": 29.6,
+      "lon": 91.1,
+      "nom": "Lhassa"
+    },
+    "evenement": "Unification du plateau tibétain et expansion militaire",
+    "action": "Puissance militaire dominant l'Asie centrale, introduction du bouddhisme tantrique, alphabet tibétain créé, rois religieux (dharmarajas).",
+    "etendue": 4600000,
+    "importance": 4,
+    "categorie": [
+      "militaire",
+      "religieuse",
+      "culturelle"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_du_Tibet"
+  },
+  {
+    "id": "civilisation-ouighour",
+    "civilisation": "Royaume ouïghour de Qocho",
+    "type": "royaume",
+    "dateDebut": "843",
+    "dateFin": "1350",
+    "lieu": {
+      "lat": 42.8,
+      "lon": 89.5,
+      "nom": "Tourfan / Gaochang"
+    },
+    "evenement": "Conversion au manichéisme puis au bouddhisme",
+    "action": "Carrefour culturel de la Route de la Soie, art bouddhique des grottes de Bezeklik, écriture ouïghoure influençant l'alphabet mongol, tolérance religieuse.",
+    "etendue": 500000,
+    "importance": 4,
+    "categorie": [
+      "culturelle",
+      "religieuse",
+      "commerciale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_ou%C3%AFghour_de_Qocho"
+  },
+  {
+    "id": "civilisation-khazar",
+    "civilisation": "Empire khazar",
+    "type": "khaganat",
+    "dateDebut": "650",
+    "dateFin": "969",
+    "lieu": {
+      "lat": 45,
+      "lon": 48,
+      "nom": "Itil"
+    },
+    "evenement": "Conversion de l'élite dirigeante au judaïsme",
+    "action": "Puissant État-tampon entre monde musulman et chrétien, seul empire juif médiéval, contrôle du commerce des fourrures et de la Volga.",
+    "etendue": 3000000,
+    "importance": 4,
+    "categorie": [
+      "religieuse",
+      "commerciale",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Khazars"
+  },
+  {
+    "id": "civilisation-seldjoukide",
+    "civilisation": "Empire seldjoukide",
+    "type": "empire",
+    "dateDebut": "1037",
+    "dateFin": "1194",
+    "lieu": {
+      "lat": 35.7,
+      "lon": 51.4,
+      "nom": "Ispahan / Merv"
+    },
+    "evenement": "Prise de Bagdad et restauration du califat sunnite",
+    "action": "Turcs seldjoukides gardiens du califat abbasside, victoire de Manzikert ouvrant l'Anatolie aux Turcs, madrasas (universités islamiques), art de la céramique à lustre.",
+    "etendue": 3900000,
+    "importance": 5,
+    "categorie": [
+      "militaire",
+      "religieuse",
+      "éducative"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_seldjoukide"
+  },
+  {
+    "id": "civilisation-khwarezm",
+    "civilisation": "Empire khwarezmien",
+    "type": "empire",
+    "dateDebut": "1077",
+    "dateFin": "1231",
+    "lieu": {
+      "lat": 42,
+      "lon": 59,
+      "nom": "Kunya-Ourguentch"
+    },
+    "evenement": "Dernier grand empire persan avant les Mongols",
+    "action": "Brillante civilisation perso-turque, mathématiciens et astronomes renommés, capitale florissante détruite par Gengis Khan, carrefour commercial asiatique.",
+    "etendue": 3600000,
+    "importance": 4,
+    "categorie": [
+      "culturelle",
+      "scientifique",
+      "commerciale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Khwarezmchahs"
+  },
+  {
+    "id": "civilisation-timouride",
+    "civilisation": "Empire timouride",
+    "type": "empire",
+    "dateDebut": "1370",
+    "dateFin": "1507",
+    "lieu": {
+      "lat": 39.6,
+      "lon": 66.9,
+      "nom": "Samarcande"
+    },
+    "evenement": "Conquêtes de Tamerlan et renaissance culturelle",
+    "action": "Samarcande comme capitale artistique (Registan, Gour Emir), renaissance timouride préfigurant la Renaissance italienne, astronomie d'Ulugh Beg, miniature persane.",
+    "etendue": 4400000,
+    "importance": 5,
+    "categorie": [
+      "artistique",
+      "scientifique",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_timouride"
+  },
+  {
+    "id": "civilisation-ottomane",
+    "civilisation": "Empire ottoman",
+    "type": "empire",
+    "dateDebut": "1299",
+    "dateFin": "1922",
+    "lieu": {
+      "lat": 41,
+      "lon": 28.9,
+      "nom": "Constantinople / Istanbul"
+    },
+    "evenement": "Prise de Constantinople par Mehmed II",
+    "action": "Dernier grand empire musulman classique, architecture de Sinan (Süleymaniye), système des millets, pont entre trois continents sur six siècles.",
+    "etendue": 5200000,
+    "importance": 5,
+    "categorie": [
+      "politique",
+      "militaire",
+      "architecturale"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Empire_ottoman"
+  },
+  {
+    "id": "civilisation-safavide",
+    "civilisation": "Empire safavide",
+    "type": "empire",
+    "dateDebut": "1501",
+    "dateFin": "1736",
+    "lieu": {
+      "lat": 32.6,
+      "lon": 51.6,
+      "nom": "Ispahan"
+    },
+    "evenement": "Instauration du chiisme duodécimain en Perse",
+    "action": "Renaissance de la Perse impériale, Ispahan 'moitié du monde' sous Shah Abbas, art du tapis et de la miniature, rivalité durable avec les Ottomans sunnites.",
+    "etendue": 2900000,
+    "importance": 5,
+    "categorie": [
+      "religieuse",
+      "artistique",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/S%C3%A9f%C3%A9vides"
+  },
+  {
+    "id": "civilisation-srivijaya",
+    "civilisation": "Empire de Srivijaya",
+    "type": "thalassocratie",
+    "dateDebut": "650",
+    "dateFin": "1377",
+    "lieu": {
+      "lat": -2.9,
+      "lon": 104.7,
+      "nom": "Palembang"
+    },
+    "evenement": "Domination des détroits de Malacca et de la Sonde",
+    "action": "Centre d'études bouddhiques majeur visité par les pèlerins chinois, contrôle naval du commerce des épices, sans vestiges monumentaux mais puissance attestée.",
+    "etendue": 1500000,
+    "importance": 5,
+    "categorie": [
+      "maritime",
+      "commerciale",
+      "religieuse"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Srivijaya"
+  },
+  {
+    "id": "civilisation-majapahit",
+    "civilisation": "Empire de Majapahit",
+    "type": "thalassocratie",
+    "dateDebut": "1293",
+    "dateFin": "1527",
+    "lieu": {
+      "lat": -7.5,
+      "lon": 112.3,
+      "nom": "Trowulan"
+    },
+    "evenement": "Âge d'or javanais sous le ministre Gajah Mada",
+    "action": "Dernier grand empire hindou-bouddhique d'Asie du Sud-Est, unification de l'archipel indonésien sous le serment de Palapa, littérature et art de cour raffinés.",
+    "etendue": 1900000,
+    "importance": 5,
+    "categorie": [
+      "maritime",
+      "culturelle",
+      "politique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Majapahit"
+  },
+  {
+    "id": "civilisation-mataram",
+    "civilisation": "Royaume de Mataram ancien",
+    "type": "royaume",
+    "dateDebut": "732",
+    "dateFin": "1006",
+    "lieu": {
+      "lat": -7.6,
+      "lon": 110.2,
+      "nom": "Plateau de Kedu"
+    },
+    "evenement": "Construction de Borobudur et Prambanan",
+    "action": "Dynastie Shailendra bouddhiste (Borobudur, le plus grand temple bouddhique), dynastie Sanjaya hindouiste (Prambanan), coexistence religieuse exceptionnelle.",
+    "etendue": 70000,
+    "importance": 5,
+    "categorie": [
+      "architecturale",
+      "religieuse",
+      "artistique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Mataram_(royaume)"
+  },
+  {
+    "id": "civilisation-funan",
+    "civilisation": "Royaume du Funan",
+    "type": "royaume",
+    "dateDebut": "68",
+    "dateFin": "550",
+    "lieu": {
+      "lat": 10.8,
+      "lon": 105,
+      "nom": "Óc Eo / delta du Mékong"
+    },
+    "evenement": "Premier État indianisé d'Asie du Sud-Est",
+    "action": "Précurseur de tous les royaumes khmers, commerce maritime avec Rome, Inde et Chine, canaux reliant le Mékong au golfe de Thaïlande.",
+    "etendue": 300000,
+    "importance": 4,
+    "categorie": [
+      "fondation",
+      "commerciale",
+      "maritime"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Fou-nan"
+  },
+  {
+    "id": "civilisation-ryukyu",
+    "civilisation": "Royaume de Ryūkyū",
+    "type": "royaume insulaire",
+    "dateDebut": "1429",
+    "dateFin": "1879",
+    "lieu": {
+      "lat": 26.2,
+      "lon": 127.7,
+      "nom": "Shuri / Okinawa"
+    },
+    "evenement": "Unification de l'archipel et âge d'or du commerce",
+    "action": "Plaque tournante du commerce est-asiatique sans armes, culture unique (karaté, danse, laque), vassal à la fois de la Chine et du Japon, château de Shuri.",
+    "etendue": 3000,
+    "importance": 4,
+    "categorie": [
+      "commerciale",
+      "culturelle",
+      "diplomatique"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Royaume_de_Ry%C5%ABky%C5%AB"
+  },
+  {
+    "id": "civilisation-koryo",
+    "civilisation": "Royaume de Goryeo",
+    "type": "royaume",
+    "dateDebut": "918",
+    "dateFin": "1392",
+    "lieu": {
+      "lat": 38,
+      "lon": 126.5,
+      "nom": "Kaesong"
+    },
+    "evenement": "Unification de la péninsule et invention des caractères mobiles",
+    "action": "Céladons verts inégalés, Tripitaka Koreana (plus de 80 000 planches xylographiques), premiers caractères métalliques mobiles au monde, résistance aux Mongols.",
+    "etendue": 220000,
+    "importance": 5,
+    "categorie": [
+      "technologique",
+      "artistique",
+      "militaire"
+    ],
+    "source": "https://fr.wikipedia.org/wiki/Goryeo"
   }
 ]
