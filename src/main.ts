@@ -107,13 +107,56 @@ const FILL_LAYER = 'civilizations-fill';
 const OUTLINE_LAYER = 'civilizations-outline';
 const LABEL_LAYER = 'civilizations-label';
 
-// Filtre MapLibre : visible si dateDebut <= currentYear <= dateFin (dateFin absente = jamais de fin).
-function visibilityFilter(currentYear: number): maplibregl.ExpressionSpecification {
-  return [
-    'all',
-    ['<=', ['get', 'dateDebut'], currentYear],
-    ['any', ['!', ['has', 'dateFin']], ['<=', currentYear, ['get', 'dateFin']]],
-  ];
+// Durée (en années) de la transition d'apparition/disparition progressive avant dateDebut
+// et après dateFin : le territoire grandit depuis un point, puis rétrécit vers ce même point.
+const FADE_YEARS = 80;
+
+interface PreparedEvent {
+  properties: Record<string, string>;
+  baseRings: number[][][];
+  center: [number, number];
+  dateDebut: number;
+  dateFin: number | undefined;
+}
+
+// 0 en dehors de la fenêtre [dateDebut-FADE_YEARS, dateFin+FADE_YEARS], 1 pendant la période active,
+// et une interpolation linéaire pendant les transitions d'entrée/sortie.
+function computeScale(year: number, dateDebut: number, dateFin: number | undefined): number {
+  if (year < dateDebut) {
+    const dt = dateDebut - year;
+    return dt > FADE_YEARS ? 0 : 1 - dt / FADE_YEARS;
+  }
+  if (dateFin !== undefined && year > dateFin) {
+    const dt = year - dateFin;
+    return dt > FADE_YEARS ? 0 : 1 - dt / FADE_YEARS;
+  }
+  return 1;
+}
+
+// Rapproche chaque point du centre (`lieu`) proportionnellement à `scale` : à scale=1 la forme est
+// intacte, à scale=0 elle est réduite à un point.
+function scaleRing(ring: number[][], center: [number, number], scale: number): number[][] {
+  const [cx, cy] = center;
+  return ring.map(([x, y]) => [cx + (x - cx) * scale, cy + (y - cy) * scale]);
+}
+
+function buildFeatureCollection(prepared: PreparedEvent[], year: number): GeoJSON.FeatureCollection {
+  const features: GeoJSON.Feature[] = [];
+  for (const event of prepared) {
+    const scale = computeScale(year, event.dateDebut, event.dateFin);
+    if (scale <= 0) {
+      continue;
+    }
+    features.push({
+      type: 'Feature',
+      properties: event.properties,
+      geometry: {
+        type: 'Polygon',
+        coordinates: event.baseRings.map((ring) => scaleRing(ring, event.center, scale)),
+      },
+    });
+  }
+  return { type: 'FeatureCollection', features };
 }
 
 map.on('load', () => {
@@ -129,27 +172,24 @@ map.on('load', () => {
   // Par défaut, on se place à la dernière date couverte par les données pour que tout soit visible.
   const initialYear = Math.max(...eventYears);
 
-  const features: GeoJSON.Feature[] = civEvents.map((event) => ({
-    type: 'Feature',
+  const prepared: PreparedEvent[] = civEvents.map((event) => ({
     properties: {
       civilisation: event.civilisation,
       color: colorForCivilisation(event.civilisation),
-      dateDebut: parseInt(event.dateDebut, 10),
-      ...(event.dateFin === undefined ? {} : { dateFin: parseInt(event.dateFin, 10) }),
       dateLabel: formatEventDate(event),
       lieu: event.lieu.nom,
       evenement: event.evenement,
       action: event.action,
     },
-    geometry: {
-      type: 'Polygon',
-      coordinates: polygonCoordinatesForEvent(event),
-    },
+    baseRings: polygonCoordinatesForEvent(event),
+    center: [event.lieu.lon, event.lieu.lat],
+    dateDebut: parseInt(event.dateDebut, 10),
+    dateFin: event.dateFin === undefined ? undefined : parseInt(event.dateFin, 10),
   }));
 
   map.addSource('civilizations', {
     type: 'geojson',
-    data: { type: 'FeatureCollection', features },
+    data: buildFeatureCollection(prepared, initialYear),
     generateId: true,
   });
 
@@ -239,20 +279,17 @@ map.on('load', () => {
       .addTo(map);
   });
 
-  function applyYearFilter(year: number): void {
-    const filter = visibilityFilter(year);
-    map.setFilter(FILL_LAYER, filter);
-    map.setFilter(OUTLINE_LAYER, filter);
-    map.setFilter(LABEL_LAYER, filter);
-  }
+  const source = map.getSource('civilizations') as maplibregl.GeoJSONSource;
 
-  applyYearFilter(initialYear);
+  function applyYear(year: number): void {
+    source.setData(buildFeatureCollection(prepared, year));
+  }
 
   const timeline = createTimeline({
     minYear,
     maxYear,
     initialYear,
-    onChange: applyYearFilter,
+    onChange: applyYear,
   });
   document.body.appendChild(timeline);
 });
